@@ -1,0 +1,68 @@
+@import "/src/assets/scss/custom/variables";
+
+%iconBorder {
+  border-radius: 0.4rem;
+  border: 1px solid $border-color;
+}
+
+.wrapper {
+  margin-top: 1.6rem;
+
+  > div {
+    gap: 0.6rem;
+  }
+
+  .icon {
+    width: 15.5rem;
+    height: 11rem;
+
+    @extend %iconBorder;
+
+    &:hover {
+      border-color: $blue-100;
+      cursor: pointer;
+    }
+
+    i {
+      font-size: 3.2rem;
+    }
+
+    h6 {
+      padding: 0 1.6rem;
+      margin-top: 1rem;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+}
+
+.content {
+  .name {
+    cursor: pointer;
+  }
+
+  .left {
+    margin-top: 1.2rem;
+    gap: 2.4rem;
+
+    .icon {
+      width: 14.6rem;
+      height: 14.6rem;
+      @extend %iconBorder;
+
+      i {
+        font-size: 8rem;
+      }
+    }
+  }
+
+  h6 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 1.6rem 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

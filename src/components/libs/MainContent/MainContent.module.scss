@@ -1,0 +1,23 @@
+@import "/src/assets/scss/custom/variables";
+
+.w3-link {
+  display: inline-block;
+  margin-top: 1rem;
+
+  color: $blue-100;
+  text-decoration: underline;
+}
+
+.text {
+  margin: 1.6rem 0;
+}
+
+.install {
+  p {
+    margin-bottom: 1.6rem;
+  }
+}
+
+.link {
+  text-decoration: underline;
+}

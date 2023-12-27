@@ -1,0 +1,50 @@
+@import "/src/assets/scss/custom/variables";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px solid $border-color;
+  background-color: $white;
+  z-index: 2;
+
+  position: sticky;
+  top: 0;
+
+  .left {
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    h1 {
+      font-size: $fs-medium;
+      font-weight: 600;
+    }
+  }
+
+  .action {
+    display: flex;
+    gap: 1rem;
+
+    > div {
+      width: 20rem;
+
+      span {
+        font-style: normal;
+      }
+    }
+  }
+}

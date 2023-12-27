@@ -1,0 +1,52 @@
+@import "/src/assets/scss/custom/variables";
+
+.bar {
+  width: 28rem;
+  padding: 1.6rem;
+  height: 100vh;
+  overflow: hidden;
+
+  &:hover {
+    overflow-y: scroll;
+  }
+
+  .item {
+    h6 {
+      margin-top: 2.4rem;
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.2rem;
+
+      color: $dark-100;
+      font-weight: 400;
+      border-bottom: 1px solid $border-color;
+    }
+
+    .element {
+      cursor: pointer;
+      position: relative;
+
+      i {
+        position: absolute;
+        left: -5px;
+        top: 50%;
+
+        color: $blue-100;
+        transform: translateY(-50%);
+      }
+
+      a {
+        display: block;
+        padding: 1rem 1.6rem;
+        color: $text-color;
+
+        &:hover {
+          color: $blue-100;
+        }
+
+        &.active {
+          color: $blue-100;
+        }
+      }
+    }
+  }
+}

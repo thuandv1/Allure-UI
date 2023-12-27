@@ -1,0 +1,22 @@
+@import "/src/assets/scss/custom/variables";
+
+.environment {
+  display: flex;
+
+  .item {
+    border: 1px solid $border-color;
+    padding: 0.8rem;
+    flex: 1;
+
+    h6 {
+      font-weight: 500;
+    }
+
+    span {
+      display: inline-block;
+      border-top: 1px solid $border-color;
+      padding-top: 0.8rem;
+      margin-top: 0.8rem;
+    }
+  }
+}
