@@ -14,6 +14,7 @@ import Tab from "components/libs/Tab";
 import Tree from "components/libs/Tree";
 import Wizard from "components/libs/Wizard";
 import Avatar from "components/libs/Avatar";
+import ChangeLog from "components/libs/ChangeLog";
 
 const publicRoutes = [
   {
@@ -27,6 +28,10 @@ const publicRoutes = [
   {
     path: routes.DesignPrinciple,
     component: DesignPrincipleContent
+  },
+  {
+    path: routes.ChangeLog,
+    component: ChangeLog
   },
   {
     path: routes.Button,

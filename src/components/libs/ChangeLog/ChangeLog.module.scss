@@ -1,0 +1,23 @@
+@import "/src/assets/scss/custom/variables";
+
+.header {
+  display: flex;
+  font-weight: normal;
+  gap: 2rem;
+}
+
+.wrapper {
+  margin-bottom: 1.6rem;
+
+  .item {
+    margin-top: 1.2rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 3.6rem;
+  }
+
+  a {
+    color: $blue-100;
+  }
+}
