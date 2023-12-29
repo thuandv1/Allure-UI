@@ -7,5 +7,6 @@ enum LanguageEnum {
 }
 
 const LANGUAGE_KEY = "lang";
+const THEME_KEY = "theme";
 
-export { LanguageEnum, LANGUAGE_KEY };
+export { LanguageEnum, LANGUAGE_KEY, THEME_KEY };

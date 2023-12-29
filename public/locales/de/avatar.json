@@ -4,10 +4,10 @@
   "use_desc": "Zeigt eine Liste von Personas an. Jeder Kreis repräsentiert eine Person und enthält ihr Bild oder ihre Initialen. Oft wird diese Steuerung verwendet, um zu teilen, wer Zugriff auf eine bestimmte Ansicht oder Datei hat, oder wenn Sie jemandem eine Aufgabe innerhalb eines Workflows zuweisen.",
   "not_use": "Verwenden Sie es nicht, wenn:",
   "not_1": "Benutzer oder Gruppe ist nicht die primären Informationen, die Sie in einer Tabelle oder Liste anzeigen möchten.",
-  "not_2": "Es gibt nicht genug Platz, um es anzuzeigen.",
+  "not_2": "Es gibt nicht genügend Platz, um es anzuzeigen.",
   "basic_desc": "Kann eine Komposition der Initialen der Person in eine Hintergrundfarbe bringen, wenn kein Personbild oder kein Bild erforderlich ist.",
   "image": "Bild",
-  "image_desc": "Verwenden Sie diesen lebhaften Stil, wenn ein Bild angezeigt werden kann.",
+  "image_desc": "Verwenden Sie diesen lebendigen Stil, wenn ein Bild angezeigt wird.",
   "square": "Quadrat",
   "quare_desc": "Verwenden Sie nur für den Right-Top-Anbieterbenutzer in der Header-Zone."
 }

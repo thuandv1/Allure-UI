@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
 import { useTranslation } from "react-i18next";
@@ -7,8 +8,7 @@ import { Dropdown, IDropdownOption, Themes } from "@gui/fluent-ui-allure";
 import styles from "./Header.module.scss";
 import { Logo } from "assets/images";
 import SearchBar from "components/SearchBar";
-import { LANGUAGE_KEY, LanguageEnum } from "constants/language";
-import { useDispatch } from "react-redux";
+import { LANGUAGE_KEY, LanguageEnum, THEME_KEY } from "constants/language";
 import { changeTheme } from "_redux/modules/app/slice";
 import { routes } from "configs";
 import { LocalStorage } from "helpers";
@@ -18,6 +18,7 @@ const cx = classNames.bind(styles);
 function Header() {
   const { t, i18n } = useTranslation(["common", "language", "themes"]);
   const lang = LocalStorage.get(LANGUAGE_KEY);
+  const theme = LocalStorage.get(THEME_KEY);
 
   const dispatch = useDispatch();
 
@@ -59,6 +60,21 @@ function Header() {
     LocalStorage.add(LANGUAGE_KEY, lang);
   };
 
+  const handleChangeTheme = (
+    _: React.FormEvent<HTMLDivElement>,
+    option?: IDropdownOption
+  ) => {
+    const theme = +option!.key;
+
+    if (!theme) {
+      return;
+    }
+
+    LocalStorage.add(THEME_KEY, JSON.stringify(theme));
+
+    dispatch(changeTheme(theme));
+  };
+
   return (
     <header className={cx("header")}>
       <div className={cx("left")}>
@@ -81,8 +97,9 @@ function Header() {
           placeholder={t("language:en")}
         />
         <Dropdown
-          onChange={(_, option) => dispatch(changeTheme(+option!.key))}
+          defaultSelectedKey={theme}
           options={themeOptions}
+          onChange={handleChangeTheme}
           placeholder={t("themes:theme", {
             theme: t("themes:cobalt")
           })}

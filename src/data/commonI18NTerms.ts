@@ -1,225 +1,329 @@
-const heading = "Common I18N Terms";
-const desc =
-  "Allure depends on @gui/common-i18n-terms which is a package including some common terms that can be used in your projects.";
-
-const whenToUse = {
-  title: "When to use",
-  desc: "Use Primary buttons in situations where uers may need to:",
-  uses: [
-    "Use auto-complete field when the user tends to use the data that he/she already entered before.",
-    "Search for matched values from list",
-    "Global search, anything that matched the keywords will be displayed"
-  ]
-};
-
-const usage = {
-  basic: {
-    title: "Basic Usage",
-    desc: "Buttons are clickable items used to perform an action. It is better to make the recommended action on the page to be the primary button. In general, a button always has these five statuses: normal, hover, clicked, focused and disabled.",
-    code: `import * as React from "react";
-import { Stack, DefaultButton, PrimaryButton, Link, TextButton, DashedButton } from "@gui/fluent-ui-allure";
-
-export const SampleBasic = () => {
-    
-    return (
-        <Stack horizontal tokens={{ childrenGap: 16 }}>
-            <TextButton title="Normal Button">Normal button</TextButton>
-
-            <DefaultButton>Outline</DefaultButton>
-
-            <PrimaryButton>Filled Button</PrimaryButton>
-
-            <DashedButton>Dashed button</DashedButton>
-
-            <Link underline>Link button</Link>
-
-            
-        </Stack>
-    );
-};`
+export const VERSION = {
+  1_11: {
+    time: "Dec/20/2023",
+    bug: [
+      "apaui_307",
+      "apaui_314",
+      "apaui_318",
+      "apaui_319",
+      "apaui_320",
+      "apaui_323",
+      "apaui_325",
+      "apaui_327",
+      "apaui_328",
+      "apaui_329",
+      "apaui_334"
+    ],
+    improvement: ["apaui_322", "apaui_326", "apaui_333"],
+    task: ["apaui_315"]
   },
-  disable: {
-    title: "Disable",
-    code: `import * as React from "react";
-import { Stack, DefaultButton, PrimaryButton, Link, IconButton, TextButton, DashedButton, Toggle, TooltipHost } from "@gui/fluent-ui-allure";
-
-export const SampleDisable = () => {
-    const [enableFocus, setEnableFocus] = React.useState(false);
-    return (
-        <Stack>
-            <Toggle
-                checked={enableFocus}
-                onChange={(_, checked) => {
-                    setEnableFocus(checked);
-                }}
-                label="Enable focus on disabled buttons"
-                inlineLabel
-            />
-            <Stack horizontal tokens={{ childrenGap: 16 }}>
-                <TooltipHost content="This button is disabled because we set disabled property">
-                    <TextButton allowDisabledFocus={enableFocus} disabled>
-                        Normal button
-                    </TextButton>
-                </TooltipHost>
-                <TooltipHost content="This button is disabled because we set disabled property">
-                    <DefaultButton allowDisabledFocus={enableFocus} disabled>
-                        Outline
-                    </DefaultButton>
-                </TooltipHost>
-                <TooltipHost content="This button is disabled because we set disabled property">
-                    <DefaultButton allowDisabledFocus={enableFocus} disabled iconProps={{ iconName: "fas-rotate-right" }}>
-                        Outline
-                    </DefaultButton>
-                </TooltipHost>
-                <TooltipHost content="This button is disabled because we set disabled property">
-                    <PrimaryButton allowDisabledFocus={enableFocus} disabled>
-                        Filled button
-                    </PrimaryButton>
-                </TooltipHost>
-                <TooltipHost content="This button is disabled because we set disabled property">
-                    <PrimaryButton allowDisabledFocus={enableFocus} disabled iconProps={{ iconName: "fas-rotate-right" }}>
-                        Filled button
-                    </PrimaryButton>
-                </TooltipHost>
-                <TooltipHost styles={{ root: {display: 'flex !important'}}} content="This button is disabled because we set disabled property">
-                    <Link disabled>Link button</Link>
-                </TooltipHost>{" "}
-                {/*disabled link doesn't support get focus */}
-                <TooltipHost content="This button is disabled because we set disabled property">
-                    <DashedButton allowDisabledFocus={enableFocus} disabled>
-                        Dashed button
-                    </DashedButton>
-                </TooltipHost>
-                <TooltipHost content="This button is disabled because we set disabled property">
-                    <IconButton allowDisabledFocus={enableFocus} bordered disabled iconProps={{ iconName: "fas-bell" }}></IconButton>
-                </TooltipHost>
-            </Stack>
-        </Stack>
-    );
-};`
+  1_10: {
+    time: "Oct/23/2023",
+    bug: [
+      "apaui_271",
+      "apaui_281",
+      "apaui_284",
+      "apaui_286",
+      "apaui_297",
+      "apaui_299",
+      "apaui_300",
+      "apaui_304",
+      "apaui_305",
+      "apaui_308",
+      "apaui_311",
+      "apaui_312",
+      "apaui_313",
+      "apaui_317"
+    ],
+    improvement: [
+      "apaui_209",
+      "apaui_301",
+      "apaui_302",
+      "apaui_303",
+      "apaui_306"
+    ],
+    task: ["apaui_195", "apaui_197", "apaui_293", "apaui_295", "apaui_298"]
   },
-  icon: {
-    title: "Icon Button",
-    code: `import * as React from "react";
-import { Stack, DefaultButton, PrimaryButton, IconButton, DashedButton, TextButton } from "@gui/fluent-ui-allure";
-
-export const SampleIcon = () => {
-    return (
-        <Stack horizontal tokens={{ childrenGap: 16 }}>
-            <DefaultButton iconProps={{ iconName: "fas-rotate-right" }}>Outline</DefaultButton>
-
-            <PrimaryButton iconProps={{ iconName: "fas-rotate-right" }}>Filled button</PrimaryButton>
-
-            <DashedButton iconProps={{ iconName: "fas-plus" }}>Dashed button</DashedButton>
-
-            <IconButton bordered iconProps={{ iconName: "fas-layer-group" }}></IconButton>
-
-
-            <TextButton style={{minWidth: 0}} iconProps={{ iconName: "fas-layer-group" }}></TextButton>
-        </Stack>
-    );
-};`
+  1_9: {
+    time: "Aug/22/2023",
+    bug: [
+      "apaui_170",
+      "apaui_178",
+      "apaui_219",
+      "apaui_268",
+      "apaui_275",
+      "apaui_276",
+      "apaui_278",
+      "apaui_280",
+      "apaui_285",
+      "apaui_287",
+      "apaui_290"
+    ],
+    improvement: ["apaui_185", "apaui_282", "apaui_291"],
+    task: [
+      "apaui_125",
+      "apaui_126",
+      "apaui_134",
+      "apaui_140",
+      "apaui_146",
+      "apaui_147",
+      "apaui_272",
+      "apaui_273",
+      "apaui_279",
+      "apaui_289"
+    ]
   },
-  context: {
-    title: "Context Menu",
-    code: `import * as React from "react";
-import { Stack, DefaultButton, PrimaryButton, IconButton, IContextualMenuProps } from "@gui/fluent-ui-allure";
-
-export const SampleContextMenu = () => {
-    const menuProps: IContextualMenuProps = {
-        items: [
-            {
-                key: "k1",
-                text: "Email message",
-                iconProps: { iconName: "fas-envelope" },
-            },
-            {
-                key: "k2",
-                text: "Calendar event",
-                iconProps: { iconName: "fas-calendar-days" },
-                subMenuProps: {
-                    calloutProps: {
-                        gapSpace: 5
-                    },
-                    gapSpace: 5,
-                    items: [
-                        {
-                            key: "k2-1",
-                            text: "Meeting",
-                            iconProps: { iconName: "fas-envelope" },
-                        },
-                        {
-                            key: "k2-2",
-                            text: "Startup",
-                            iconProps: { iconName: "fas-envelope" },
-                        },
-                    ]
-                }
-            },
-        ],
-        directionalHintFixed: true,
-    };
-
-    return (
-        <Stack horizontal tokens={{ childrenGap: 16 }}>
-            <DefaultButton menuProps={menuProps}>Outline</DefaultButton>
-
-            <DefaultButton iconProps={{ iconName: "fas-rotate-right" }} menuProps={menuProps}>Outline</DefaultButton>
-
-
-            <PrimaryButton menuProps={menuProps}>Button Group</PrimaryButton>
-
-            <IconButton bordered iconProps={{ iconName: "fas-ellipsis" }} menuProps={menuProps} styles={{ menuIcon: { display: "none" } }}></IconButton>
-        </Stack>
-    );
-};`
+  1_8: {
+    time: "Jun/20/2023",
+    bug: [
+      "apaui_187",
+      "apaui_201",
+      "apaui_202",
+      "apaui_203",
+      "apaui_216",
+      "apaui_229",
+      "apaui_243",
+      "apaui_244",
+      "apaui_245",
+      "apaui_250",
+      "apaui_251",
+      "apaui_252",
+      "apaui_253",
+      "apaui_254",
+      "apaui_255",
+      "apaui_257",
+      "apaui_258",
+      "apaui_261",
+      "apaui_262"
+    ],
+    improvement: [],
+    task: ["apaui_211", "apaui_215", "apaui_249", "apaui_259", "apaui_260"]
   },
-  loading: {
-    title: "Loading",
-    code: `import * as React from "react";
-import { Stack, DefaultButton, PrimaryButton, IconButton, IContextualMenuProps, TextButton, DashedButton } from "@gui/fluent-ui-allure";
-
-export const SampleLoading = () => {
-    const [busy, setBusy] = React.useState(false);
-    return (
-        <Stack tokens={{childrenGap: 16}}>
-            <Stack horizontal tokens={{ childrenGap: 16 }}>
-                <PrimaryButton busy={busy}>Filled button</PrimaryButton>
-                <PrimaryButton busy={busy} iconProps={{ iconName: "fas-rotate-right" }}>
-                    Filled button
-                </PrimaryButton>
-
-                <DefaultButton busy={busy} iconProps={{ iconName: "fas-rotate-right" }}>
-                    Outline
-                </DefaultButton>
-
-                <IconButton busy={busy} bordered iconProps={{ iconName: "fas-bell" }}></IconButton>
-
-                {/* <TextButton busy={busy} iconProps={{ iconName: "fas-rotate-right" }}>Text Button</TextButton> */}
-
-                {/* <DashedButton  busy={busy} iconProps={{ iconName: "fas-rotate-right" }}>Dashed Button</DashedButton> */}
-
-                <PrimaryButton onClick={() => setBusy(!busy)}>Toggle Busy</PrimaryButton>
-            </Stack>
-            <Stack horizontal tokens={{ childrenGap: 16 }}>
-                <PrimaryButton busy={busy} busyText="Loading">Filled button</PrimaryButton>
-                <PrimaryButton busy={busy} busyText="Loading" iconProps={{ iconName: "fas-rotate-right" }}>
-                    Filled button
-                </PrimaryButton>
-
-                <DefaultButton busy={busy} busyText="Loading" iconProps={{ iconName: "fas-rotate-right" }}>
-                    Outline
-                </DefaultButton>
-
-                {/* <TextButton busy={busy} busyText="Loading" iconProps={{ iconName: "fas-rotate-right" }}>Text Button</TextButton> */}
-
-                {/* <DashedButton  busy={busy} busyText="Loading" iconProps={{ iconName: "fas-rotate-right" }}>Dashed Button</DashedButton> */}
-
-            </Stack>
-        </Stack>
-    );
-};`
+  1_7: {
+    time: "Apr/27/2023",
+    bug: [
+      "apaui_198",
+      "apaui_210",
+      "apaui_217",
+      "apaui_218",
+      "apaui_225",
+      "apaui_226",
+      "apaui_227",
+      "apaui_228",
+      "apaui_230",
+      "apaui_231",
+      "apaui_232",
+      "apaui_233",
+      "apaui_234",
+      "apaui_236",
+      "apaui_237",
+      "apaui_238",
+      "apaui_239",
+      "apaui_241",
+      "apaui_242"
+    ],
+    improvement: ["apaui_220", "apaui_221", "apaui_222", "apaui_223"],
+    task: [
+      "apaui_88",
+      "apaui_194",
+      "apaui_196",
+      "apaui_204",
+      "apaui_206",
+      "apaui_214",
+      "apaui_224"
+    ]
+  },
+  1_6: {
+    time: "Feb/3/2023",
+    bug: ["apaui_205", "apaui_207", "apaui_208", "apaui_212", "apaui_213"],
+    improvement: [],
+    task: ["apaui_148", "apaui_192", "apaui_193"]
+  },
+  1_5: {
+    time: "Dec/30/2022",
+    bug: [
+      "apaui_169",
+      "apaui_174",
+      "apaui_175",
+      "apaui_177",
+      "apaui_179",
+      "apaui_183",
+      "apaui_184",
+      "apaui_189",
+      "apaui_190",
+      "apaui_199"
+    ],
+    improvement: ["apaui_186", "apaui_188"],
+    task: [
+      "apaui_133",
+      "apaui_137",
+      "apaui_139",
+      "apaui_141",
+      "apaui_143",
+      "apaui_167",
+      "apaui_168",
+      "apaui_176",
+      "apaui_181"
+    ]
+  },
+  1_4: {
+    time: "Nov/17/2022",
+    bug: [
+      "apaui_151",
+      "apaui_152",
+      "apaui_154",
+      "apaui_162",
+      "apaui_163",
+      "apaui_164",
+      "apaui_165"
+    ],
+    improvement: [],
+    task: [
+      "apaui_53",
+      "apaui_54",
+      "apaui_85",
+      "apaui_122",
+      "apaui_123",
+      "apaui_124",
+      "apaui_127",
+      "apaui_128",
+      "apaui_132",
+      "apaui_136",
+      "apaui_138",
+      "apaui_150",
+      "apaui_153",
+      "apaui_158",
+      "apaui_166",
+      "apaui_182"
+    ]
+  },
+  1_3: {
+    time: "Aug/26/2022",
+    bug: [
+      "apaui_95",
+      "apaui_96",
+      "apaui_99",
+      "apaui_100",
+      "apaui_101",
+      "apaui_103",
+      "apaui_105",
+      "apaui_106",
+      "apaui_108",
+      "apaui_109",
+      "apaui_110",
+      "apaui_111",
+      "apaui_112",
+      "apaui_113",
+      "apaui_115",
+      "apaui_116",
+      "apaui_120",
+      "apaui_121",
+      "apaui_155",
+      "apaui_156",
+      "apaui_157",
+      "apaui_159",
+      "apaui_160",
+      "apaui_161"
+    ],
+    improvement: ["apaui_102", "apaui_107", "apaui_117"],
+    task: [
+      "apaui_74",
+      "apaui_75",
+      "apaui_76",
+      "apaui_77",
+      "apaui_78",
+      "apaui_79",
+      "apaui_80",
+      "apaui_81",
+      "apaui_83",
+      "apaui_84",
+      "apaui_90",
+      "apaui_91",
+      "apaui_93",
+      "apaui_104",
+      "apaui_118",
+      "apaui_119"
+    ]
+  },
+  1_2: {
+    time: "Jun/4/2022",
+    bug: [
+      "apaui_28",
+      "apaui_39",
+      "apaui_59",
+      "apaui_60",
+      "apaui_61",
+      "apaui_63",
+      "apaui_64",
+      "apaui_65",
+      "apaui_66",
+      "apaui_67",
+      "apaui_68",
+      "apaui_70",
+      "apaui_71",
+      "apaui_72",
+      "apaui_92",
+      "apaui_94",
+      "apaui_97",
+      "apaui_98"
+    ],
+    improvement: [],
+    task: ["apaui_55", "apaui_56", "apaui_57", "apaui_58", "apaui_73"]
+  },
+  1_0: {
+    time: "Mar/25/2022",
+    bug: [
+      "apaui_1",
+      "apaui_2",
+      "apaui_11",
+      "apaui_12",
+      "apaui_13",
+      "apaui_14",
+      "apaui_15",
+      "apaui_18",
+      "apaui_19",
+      "apaui_20",
+      "apaui_21",
+      "apaui_22",
+      "apaui_23",
+      "apaui_24",
+      "apaui_29",
+      "apaui_30",
+      "apaui_31",
+      "apaui_32",
+      "apaui_33",
+      "apaui_34",
+      "apaui_35",
+      "apaui_36",
+      "apaui_37",
+      "apaui_40",
+      "apaui_41",
+      "apaui_42",
+      "apaui_43",
+      "apaui_45",
+      "apaui_46",
+      "apaui_47",
+      "apaui_48",
+      "apaui_49",
+      "apaui_51",
+      "apaui_52"
+    ],
+    improvement: [],
+    task: [
+      "apaui_3",
+      "apaui_4",
+      "apaui_5",
+      "apaui_6",
+      "apaui_7",
+      "apaui_8",
+      "apaui_9",
+      "apaui_10",
+      "apaui_16",
+      "apaui_17",
+      "apaui_25",
+      "apaui_26",
+      "apaui_27",
+      "apaui_50"
+    ]
   }
 };
-
-export { heading, desc, whenToUse, usage };
