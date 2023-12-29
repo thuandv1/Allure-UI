@@ -1,5 +1,6 @@
 import * as React from "react";
 import { INavLinkGroup, INavLink, Nav } from "@gui/fluent-ui-allure";
+import { WithTranslation, withTranslation } from "react-i18next";
 
 const sidebarStyle = {
   width: "fit-content",
@@ -16,11 +17,18 @@ const imageStyle: React.CSSProperties = {
   maxWidth: 180
 };
 
+interface IState {
+  selectedKey?: string;
+  isCollapsed?: boolean;
+}
+
+export interface NavViewProps extends WithTranslation {}
+
 const navs: INavLinkGroup[] = [
   {
     links: [
       {
-        name: "Dashboard",
+        name: "dashboard",
         url: "#/navigationmenu",
         key: "k1",
         iconProps: {
@@ -28,8 +36,8 @@ const navs: INavLinkGroup[] = [
         }
       },
       {
-        name: "User Management",
-        title: "User Management",
+        name: "user_management",
+        title: "user_management",
         url: "",
         iconProps: {
           iconName: "fas-user"
@@ -38,7 +46,7 @@ const navs: INavLinkGroup[] = [
         key: "k2",
         links: [
           {
-            name: "Sub nav item1",
+            name: "sub_nav_item1",
             url: "#/navigationmenu",
             iconProps: {
               iconName: "fas-arrow-right"
@@ -46,7 +54,7 @@ const navs: INavLinkGroup[] = [
             key: "k21"
           },
           {
-            name: "Sub nav item2",
+            name: "sub_nav_item2",
             url: "#/navigationmenu",
             iconProps: {
               iconName: "fas-arrow-right"
@@ -54,7 +62,7 @@ const navs: INavLinkGroup[] = [
             key: "k22"
           },
           {
-            name: "Sub nav item3",
+            name: "sub_nav_item3",
             url: "#/navigationmenu",
             iconProps: {
               iconName: "fas-arrow-right"
@@ -64,8 +72,8 @@ const navs: INavLinkGroup[] = [
         ]
       },
       {
-        name: "User Management with long title",
-        title: "User Management with long title",
+        name: "user_long",
+        title: "user_long",
         url: "",
         iconProps: {
           iconName: "fas-user"
@@ -74,7 +82,7 @@ const navs: INavLinkGroup[] = [
         key: "k202",
         links: [
           {
-            name: "Sub nav item1 with long long titlelong long titlelong long titlelong long titlelong long titleg titlelong long titlelong long titleg titlelong long titlelong long titleg titlelong long titlelong long title",
+            name: "sub_long",
             url: "#/navigationmenu",
             iconProps: {
               iconName: "fas-arrow-right"
@@ -82,7 +90,7 @@ const navs: INavLinkGroup[] = [
             key: "k212"
           },
           {
-            name: "Sub nav item2",
+            name: "sub_nav_item2",
             url: "#/navigationmenu",
             iconProps: {
               iconName: "fas-arrow-right"
@@ -92,7 +100,7 @@ const navs: INavLinkGroup[] = [
         ]
       },
       {
-        name: "Templates",
+        name: "templates",
         url: "#/navigationmenu",
         iconProps: {
           iconName: "fas-layer-group"
@@ -104,7 +112,7 @@ const navs: INavLinkGroup[] = [
   {
     links: [
       {
-        name: "Help",
+        name: "help",
         url: "#/navigationmenu",
         iconProps: {
           iconName: "fas-circle-question"
@@ -112,7 +120,7 @@ const navs: INavLinkGroup[] = [
         key: "k8"
       },
       {
-        name: "Settings",
+        name: "settings",
         url: "#/navigationmenu",
         iconProps: {
           iconName: "fas-gear"
@@ -123,15 +131,11 @@ const navs: INavLinkGroup[] = [
   }
 ];
 
-interface IState {
-  selectedKey?: string;
-  isCollapsed?: boolean;
-}
-
-export class NavView extends React.Component<unknown, IState> {
-  constructor(props: any) {
+export class NavView extends React.Component<NavViewProps, IState> {
+  constructor(props: NavViewProps) {
     super(props);
     this.state = { selectedKey: "k1", isCollapsed: false };
+    this.props.t("navigation_menu");
   }
   _onLinkClick(ev?: any, item?: INavLink) {
     this.setState({ selectedKey: item?.key });
@@ -154,13 +158,33 @@ export class NavView extends React.Component<unknown, IState> {
   }
 
   render() {
+    const { t } = this.props;
+
     return (
       <div style={sidebarStyle}>
         <Nav
           enableAnimationEffect={true}
           onLinkClick={(e, i) => this._onLinkClick(e, i)}
           selectedKey={this.state.selectedKey}
-          groups={navs}
+          groups={navs.map((item: INavLinkGroup) => ({
+            ...item,
+            links: item.links.map((link) => {
+              if (link?.links?.length) {
+                return {
+                  ...link,
+                  links: link.links.map((subLink) => ({
+                    ...subLink,
+                    name: t(subLink.name)
+                  })),
+                  name: t(link.name)
+                };
+              }
+              return {
+                ...link,
+                name: t(link.name)
+              };
+            })
+          }))}
           onRenderLogo={this.setLogo}
           onCollapsedCheck={(i) => this._onCollapsedCheck(i)}
           expandTooltip="Expand"
@@ -171,3 +195,6 @@ export class NavView extends React.Component<unknown, IState> {
     );
   }
 }
+const TranslatedNavView = withTranslation("navigation_menu")(NavView);
+
+export default TranslatedNavView;

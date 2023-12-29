@@ -6,6 +6,7 @@ import {
   TreeViewItemClickEvent,
   processTreeViewItems
 } from "@gui/fluent-ui-allure";
+import { useTranslation } from "react-i18next";
 
 interface TreeViewDataItem {
   id: string;
@@ -75,6 +76,8 @@ const tree: TreeViewDataItem[] = [
 ];
 
 export const SampleBasic = () => {
+  const [t] = useTranslation("tree");
+
   const [expand, setExpand] = React.useState({
     ids: ["1", "2-2"],
     idField: "id"
@@ -94,7 +97,25 @@ export const SampleBasic = () => {
   return (
     <div style={{ width: 430 }}>
       <TreeView
-        data={processTreeViewItems(tree, { select: select, expand: expand })}
+        data={processTreeViewItems(
+            tree.map((node) => ({
+              ...node,
+              text: t(node.text.toLowerCase()),
+              items: node.items
+                ? node.items.map((subNode) => ({
+                    ...subNode,
+                    text: t(subNode.text.toLowerCase()),
+                    items: subNode.items
+                      ? subNode.items.map((subSubNode) => ({
+                          ...subSubNode,
+                          text: t(subSubNode.text.toLowerCase())
+                        }))
+                      : undefined
+                  }))
+                : undefined
+            })),
+          { select: select, expand: expand }
+        )}
         expandIcons={true}
         onExpandChange={onExpandChange}
         onItemClick={onItemClick}

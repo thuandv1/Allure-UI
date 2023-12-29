@@ -1,0 +1,18 @@
+{
+  "usage": "Usage",
+  "basic_usage": "Utilisation de base",
+  "install": "Installation",
+  "design_system": "{{name}} Système de conception",
+  "when_to_use": "Quand utiliser",
+  "search": "Mot-clé de recherche de type",
+  "company_name": "Avepoint",
+  "app_name": "Allure {{text}}",
+  "question_search": "Qu'est-ce que tu cherches?",
+  "search_docs": "Rechercher des documents",
+  "no_results": "Aucun résultat pour",
+  "cancel": "Annuler",
+  "submit": "Soumettre",
+  "ok": "D'ACCORD",
+  "input": "Saisir",
+  "loading": "Chargement"
+}

@@ -11,6 +11,7 @@ import {
   Link,
   DefaultButton
 } from "@gui/fluent-ui-allure";
+import { useTranslation } from "react-i18next";
 
 interface LoadOnDemandTreeViewDataItem extends TreeViewDataItem {
   onLoadMoreClick?: (item: LoadOnDemandTreeViewDataItem) => void;
@@ -19,20 +20,20 @@ interface LoadOnDemandTreeViewDataItem extends TreeViewDataItem {
 const treeData: LoadOnDemandTreeViewDataItem[] = [
   {
     id: "1",
-    text: "Furniture",
+    text: "furniture",
     items: [
-      { id: "1-1", text: "Tables & Chairs", hasChildren: true },
-      { id: "1-2", text: "Sofas", hasChildren: true },
-      { id: "1-3", text: "Occasional Furniture" }
+      { id: "1-1", text: "tables_chairs", hasChildren: true },
+      { id: "1-2", text: "sofas", hasChildren: true },
+      { id: "1-3", text: "occasional_furniture" }
     ]
   },
   {
     id: "2",
-    text: "Decor",
+    text: "decor",
     items: [
-      { id: "2-1", text: "Bed Linen" },
-      { id: "2-2", text: "Curtains & Blinds" },
-      { id: "2-3", text: "Carpets", hasChildren: true }
+      { id: "2-1", text: "bed_linen" },
+      { id: "2-2", text: "curtains_blinds" },
+      { id: "2-3", text: "carpets", hasChildren: true }
     ]
   }
 ];
@@ -107,6 +108,8 @@ const TreeItem = (props: ItemRenderProps) => {
 };
 
 export const SampleLoading = () => {
+  const [t] = useTranslation("tree");
+
   const [tree, setTree] = React.useState(treeData);
   const [expand, setExpand] = React.useState({
     ids: ["1", "2"],
@@ -204,10 +207,22 @@ export const SampleLoading = () => {
         onClick={() => refreshSelectedItem()}
         style={{ marginBottom: 15 }}
       >
-        Refresh selected item
+        {t("refresh")}
       </DefaultButton>
       <TreeView
-        data={processTreeViewItems(tree, { select: select, expand: expand })}
+        data={processTreeViewItems(
+          tree.map((item) => ({
+            ...item,
+            text: t(`${item.text}`),
+            items: item.items
+              ? item.items.map((subItem) => ({
+                  ...subItem,
+                  text: t(`${subItem.text}`)
+                }))
+              : undefined
+          })),
+          { select: select, expand: expand }
+        )}
         onItemClick={onItemClick}
         expandIcons={true}
         item={TreeItem}

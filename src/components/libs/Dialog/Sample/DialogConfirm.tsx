@@ -8,26 +8,29 @@ import {
 } from "@gui/fluent-ui-allure";
 
 import styles from "../Dialog.module.scss";
+import { useTranslation } from "react-i18next";
 
 const cx = classNames.bind(styles);
 
 export const DialogConfirm = () => {
+  const [t] = useTranslation(["dialog", "common"]);
+
   const [isDialogClosed, setDialogClosed] = React.useState(true);
+
   return (
     <div>
       <div className={cx("button")}>
         <DefaultButton onClick={() => setDialogClosed(false)}>
-          Open dialog
+          {t("open")}
         </DefaultButton>
       </div>
-      <Dialog hidden={isDialogClosed} title="Confirm" maxWidth="480px">
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem cumque,
-          excepturi, veniam, odit quos eveniet laudantium ea aut amet in est
-          possimus minima rerum explicabo ducimus quisquam optio! Alias, totam?
-        </div>
+      <Dialog hidden={isDialogClosed} title={t("confirm")} maxWidth="480px">
+        <div>{t("email_text")}</div>
         <DialogFooter>
-          <PrimaryButton onClick={() => setDialogClosed(true)} text="OK" />
+          <PrimaryButton
+            onClick={() => setDialogClosed(true)}
+            text={t("common:ok")}
+          />
         </DialogFooter>
       </Dialog>
     </div>

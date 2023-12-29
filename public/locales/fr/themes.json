@@ -1,0 +1,12 @@
+{
+  "cobalt": "Cobalt",
+  "teal": "Sarcelle",
+  "ochre": "Ocre",
+  "violet": "Violet",
+  "magenta": "Magenta",
+  "lavender": "Lavande",
+  "pewter": "Étain",
+  "mint": "menthe",
+  "custom": "Couleur du thème personnalisé",
+  "theme": "Thème: {{theme}}"
+}

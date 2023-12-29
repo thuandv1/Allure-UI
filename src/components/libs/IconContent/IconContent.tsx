@@ -10,38 +10,43 @@ import { BasicIcon } from "./Sample/BasicIcon";
 import { ColorIcon } from "./Sample/ColorIcon";
 import { OfficeIcon } from "./Sample/OfficeIcon";
 import { OfficeColorIcon } from "./Sample/OfficeColorIcon";
+import { useTranslation } from "react-i18next";
 
 const cx = classNames.bind(styles);
 
 function IconContent() {
+  const [t] = useTranslation(["icon", "common"]);
+
   return (
-    <Content title={heading}>
+    <Content title={t("title")}>
       <p className={cx("text")}>
-        {refer.awesome.title} &nbsp;
+        Font awesome V6 {t("free")} &nbsp;
         <Link to={refer.awesome.link}>{refer.awesome.link}</Link>
       </p>
       <p>
         {refer.microsoft.title} &nbsp;
         <Link to={refer.microsoft.link}>{refer.microsoft.link}</Link>
       </p>
-      <TypoUsage text={desc} />
+      <TypoUsage text={t("desc")} />
       <SectionContent
-        title={usage.basic.title}
+        title={`Font awesome ${t("common:basic_usage").toLowerCase()}`}
         extraCode={usage.basic.code}
         component={<BasicIcon />}
       />
       <SectionContent
-        title={usage.color.title}
+        title={`Font awesome ${t("custom")}`}
         extraCode={usage.color.code}
         component={<ColorIcon />}
       />
       <SectionContent
-        title={usage.office.title}
+        title={`Office UI Fabric Icons ${t(
+          "common:basic_usage"
+        ).toLowerCase()}`}
         extraCode={usage.office.code}
         component={<OfficeIcon />}
       />
       <SectionContent
-        title={usage.officeColor.title}
+        title={`Office UI Fabric Icons ${t("custom")}`}
         extraCode={usage.officeColor.code}
         component={<OfficeColorIcon />}
       />

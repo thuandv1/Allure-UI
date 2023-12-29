@@ -1,0 +1,20 @@
+{
+  "title": "导航菜单",
+  "desc": "导航菜单是用户可以始终访问的链接列表。",
+  "usage_1": "其中包含主要功能链接。主函数导航可以使用层次结构样式具有子游动项目。",
+  "usage_2": "导航栏中的图标用作视觉负担，表明该项目是可行的。例如，当悬停导航项目时，它将看起来像背景一样较浅。",
+  "usage_3": "如果导航项目是组，则它没有访问其他页面的功能。只能扩展或折叠导航项目组。",
+  "dashboard": "仪表板",
+  "user_management": "用户管理",
+  "sub_nav_item1": "Sub Nav Item1",
+  "sub_nav_item2": "Sub Nav Item2",
+  "sub_nav_item3": "Sub Nav Item3",
+  "user_long": "用户管理长标题",
+  "sub_long": "sub nav item1，长长标题长的长标题长标题长标题长标题长标题长标题长标题长标题长长长",
+  "templates": "模板",
+  "help": "帮助",
+  "settings": "设置",
+  "collapse": "导航汇合",
+  "collapse_desc": "导航菜单始终崩溃。",
+  "light": "光"
+}

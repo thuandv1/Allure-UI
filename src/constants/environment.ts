@@ -1,12 +1,12 @@
 import { Chrome, Edge, Electron, Firefox, Opera, Safari } from "assets/images";
 
 const environments = [
-  { name: "Edge", img: Edge, version: "Latest 2 versions" },
-  { name: "Chrome", img: Chrome, version: "Latest 2 versions" },
-  { name: "Firefox", img: Firefox, version: "Latest 2 versions" },
-  { name: "Opera", img: Opera, version: "Latest 2 versions" },
+  { name: "Edge", img: Edge, version: "2" },
+  { name: "Chrome", img: Chrome, version: "2" },
+  { name: "Firefox", img: Firefox, version: "2" },
+  { name: "Opera", img: Opera, version: "2" },
   { name: "Safari", img: Safari, version: "≥ 15" },
-  { name: "Electron", img: Electron, version: "Latest 2 versions" }
+  { name: "Electron", img: Electron, version: "2" }
 ];
 
 export { environments };

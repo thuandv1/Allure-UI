@@ -1,0 +1,9 @@
+{
+  "title": "Tab {{index}}",
+  "desc": "Registerkarten halten den verwandten Inhalt in einem einzelnen Container, der durch Navigation gezeigt und versteckt wird.",
+  "usage_desc": "Zeigen Sie nicht zu viele Registerkarten gleichzeitig an, der Benutzer kann sich nicht mehr als 7-9 Namen erinnern. Zusammenfassen Sie den Rest der Registerkarten in \"...\" mehr Aktion.",
+  "card": "Kartenstil",
+  "card_desc": "Registerkarten werden als Karten bezeichnet. Wählen Sie eine Registerkarte im Kartenstil gemäß Ihrem Seitenlayout.",
+  "vertical": "Vertikale Registerkarten",
+  "vertical_desc": "Vertikale Registerkarten sind die Registerkarten, die links in einem vertikalen Raum angeordnet sind, anstatt oben in einem horizontalen Raum."
+}

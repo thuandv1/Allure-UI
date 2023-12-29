@@ -5,25 +5,64 @@ import {
   IExtendedPalette,
   PivotItem
 } from "@gui/fluent-ui-allure";
+import { useTranslation } from "react-i18next";
 
 const labelStyles = {
   root: { marginTop: 10 }
 };
 
 export const VerticalTabView: React.FunctionComponent = () => {
+  const [t] = useTranslation("tab");
+
   return (
     <VerticalTab>
-      <PivotItem headerText="Tab 1" itemKey="k1">
-        <Label styles={labelStyles}>Tab #1</Label>
+      <PivotItem
+        headerText={t("title", {
+          index: 1
+        })}
+        headerButtonProps={{
+          "data-order": 1,
+          "data-title": "My Files Title"
+        }}
+      >
+        <Label styles={labelStyles}>
+          {t("title", {
+            index: "#1"
+          })}
+        </Label>
       </PivotItem>
-      <PivotItem headerText="Tab 2" itemKey="k2">
-        <Label styles={labelStyles}>Tab #2</Label>
+      <PivotItem
+        headerText={t("title", {
+          index: 2
+        })}
+      >
+        <Label styles={labelStyles}>
+          {t("title", {
+            index: "#2"
+          })}
+        </Label>
       </PivotItem>
-      <PivotItem headerText="Tab 3" itemKey="k3">
-        <Label styles={labelStyles}>Tab #3</Label>
+      <PivotItem
+        headerText={t("title", {
+          index: 3
+        })}
+      >
+        <Label styles={labelStyles}>
+          {t("title", {
+            index: "#3"
+          })}
+        </Label>
       </PivotItem>
-      <PivotItem headerText="Tab 4" itemKey="k4">
-        <Label styles={labelStyles}>Tab #4</Label>
+      <PivotItem
+        headerText={t("title", {
+          index: 4
+        })}
+      >
+        <Label styles={labelStyles}>
+          {t("title", {
+            index: "#4"
+          })}
+        </Label>
       </PivotItem>
     </VerticalTab>
   );

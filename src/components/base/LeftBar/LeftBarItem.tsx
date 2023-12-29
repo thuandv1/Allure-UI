@@ -5,7 +5,8 @@ import { Icon } from "@gui/fluent-ui-allure";
 
 import styles from "./LeftBar.module.scss";
 import { ModuleItem } from "types/LeftBar";
-import { nameToPath } from "helpers";
+import { nameToKey, nameToPath } from "helpers";
+import { useTranslation } from "react-i18next";
 
 const cx = classNames.bind(styles);
 
@@ -18,14 +19,20 @@ function LeftBarItem(props: ILeftBarItemProps) {
     barItem: { module, children }
   } = props;
 
+  const [t] = useTranslation(["left_bar", "common"]);
+
   return (
     <>
       <div className={cx("item")}>
-        <h6 className={cx("module")}>{module}</h6>
+        <h6 className={cx("module")}>
+          {t(module, {
+            name: t("common:app_name", { text: "" })
+          })}
+        </h6>
         {children.map((c, index) => (
           <div key={index} className={cx("element")}>
             {c.notVerify && (
-              <TooltipHost content={<span>Not production verified</span>}>
+              <TooltipHost content={<span>{t("not_verify")}</span>}>
                 <Icon iconName="fas-vial" />
               </TooltipHost>
             )}
@@ -34,7 +41,7 @@ function LeftBarItem(props: ILeftBarItemProps) {
               to={c.link ?? nameToPath(c.name)}
               target={c.outPath ? "_blank" : undefined}
             >
-              {c.name}
+              {t(nameToKey(c.name))}
             </NavLink>
           </div>
         ))}

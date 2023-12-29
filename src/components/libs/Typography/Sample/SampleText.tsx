@@ -1,6 +1,5 @@
 import * as React from "react";
 import {
-  Link,
   Stack,
   Text,
   SecondaryText,
@@ -8,27 +7,29 @@ import {
   PageHeaderText,
   HeadingType
 } from "@gui/fluent-ui-allure";
+import { useTranslation } from "react-i18next";
 
 export const SampleText = () => {
+  const [t] = useTranslation("typography");
+
   return (
     <Stack horizontal tokens={{ childrenGap: 120 }}>
       <Stack tokens={{ childrenGap: 10 }}>
-        <PageHeaderText block>Page Header Title</PageHeaderText>
+        <PageHeaderText block>{t("page_header")}</PageHeaderText>
         <HeadingText type={HeadingType.LargeBold} block>
-          Heading large bold
+          {t("large_header")}
         </HeadingText>
         <HeadingText type={HeadingType.MediumBold} block>
-          Heading medium bold
+          {t("medium_header")}
         </HeadingText>
         <HeadingText type={HeadingType.DefaultBold} block>
-          Bold heading
+          {t("bold_header")}
         </HeadingText>
         <HeadingText type={HeadingType.Semibold} block>
-          Semibold Heading
+          {t("semi_header")}
         </HeadingText>
-        <Text block>Default body</Text>
-        <SecondaryText block>Secondary text</SecondaryText>
-        {/* <Link underline>Text link</Link> */}
+        <Text block>{t("default")}</Text>
+        <SecondaryText block>{t("secondary")}</SecondaryText>
       </Stack>
       <Stack tokens={{ childrenGap: 10 }}>
         <PageHeaderText block>23px, regular</PageHeaderText>
@@ -49,22 +50,21 @@ export const SampleText = () => {
         {/* <Link underline>Text link</Link> */}
       </Stack>
       <Stack tokens={{ childrenGap: 10 }}>
-        <PageHeaderText block>Breadcrumb</PageHeaderText>
+        <PageHeaderText block>{t("breadcrumb")}</PageHeaderText>
         <HeadingText type={HeadingType.LargeBold} block>
-          Calendar Month/Year
+          {t("calendar")}
         </HeadingText>
         <HeadingText type={HeadingType.MediumBold} block>
-          Panel and popup title
+          {t("panel")}
         </HeadingText>
         <HeadingText type={HeadingType.DefaultBold} block>
-          Section title, table primary column value
+          {t("section")}
         </HeadingText>
         <HeadingText type={HeadingType.Semibold} block>
-          Label title, table column name, action
+          {t("label")}
         </HeadingText>
-        <Text block>Body</Text>
-        <SecondaryText block>Description, watermark</SecondaryText>
-        {/* <Link underline>Text link</Link> */}
+        <Text block>{t("body")}</Text>
+        <SecondaryText block>{t("watermark")}</SecondaryText>
       </Stack>
     </Stack>
   );

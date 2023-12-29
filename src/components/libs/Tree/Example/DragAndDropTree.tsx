@@ -11,6 +11,7 @@ import {
   TreeViewItemDragOverEvent,
   TreeViewItemDragEndEvent
 } from "@gui/fluent-ui-allure";
+import { useTranslation } from "react-i18next";
 
 interface TreeViewDataItem {
   id: string;
@@ -92,6 +93,8 @@ function getSiblings(itemIndex: string, data: TreeViewDataItem[]) {
 }
 
 export const SampleDragDrop = () => {
+  const [t] = useTranslation("tree");
+
   const dragClue = React.useRef<any>();
   const dragOverCnt = React.useRef<number>(0);
   const isDragDrop = React.useRef<boolean>(false);
@@ -198,7 +201,25 @@ export const SampleDragDrop = () => {
   return (
     <div style={{ width: 430 }}>
       <TreeView
-        data={processTreeViewItems(tree, { select: selected, expand: expand })}
+        data={processTreeViewItems(
+          tree.map((node) => ({
+            ...node,
+            text: t(node.text.toLowerCase()),
+            items: node.items
+              ? node.items.map((subNode) => ({
+                  ...subNode,
+                  text: t(subNode.text.toLowerCase()),
+                  items: subNode.items
+                    ? subNode.items.map((subSubNode) => ({
+                        ...subSubNode,
+                        text: t(subSubNode.text.toLowerCase())
+                      }))
+                    : undefined
+                }))
+              : undefined
+          })),
+          { select: selected, expand: expand }
+        )}
         draggable={true}
         onItemDragOver={onItemDragOver}
         onItemDragEnd={onItemDragEnd}

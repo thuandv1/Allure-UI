@@ -1,10 +1,5 @@
-const heading = "Typography";
-const desc =
-  "This is a component for displaying text. You can use this to standardize text across your system.";
-
 const usage = {
   spacing: {
-    title: "Letter Spacing",
     desc: "-15 (-0.015rem)"
   },
   font: {
@@ -75,4 +70,4 @@ export const SampleText = () => {
   }
 };
 
-export { heading, desc, usage };
+export { usage };

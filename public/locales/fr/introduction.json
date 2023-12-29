@@ -1,0 +1,11 @@
+{
+  "design_desc": "Ce système de conception {{app}} contient à la fois des directives de style et d'interaction qui peuvent être appliquées aux produits en ligne de {{company}}. Il peut nous aider à créer une expérience utilisateur de cohérence pour les clients {{company}}.",
+  "wcag_title": "WCAG2.0 pris en charge",
+  "wcag_desc": "Les directives d'accessibilité du contenu Web (WCAG) 2.0 couvrent un large éventail de recommandations pour rendre le contenu Web plus accessible. Suivre ces directives rendra le contenu accessible à un plus large éventail de personnes handicapées, notamment la cécité et la faible vision, la surdité et la perte auditive, les troubles d'apprentissage, les limitations cognitives, le mouvement limité, les troubles de la parole, la photosensibilité et les combinaisons de ceux-ci. Suivre ces directives rendra également souvent votre contenu Web plus utilisable aux utilisateurs en général.",
+  "wcag_overview": "Présentation WCAG 2",
+  "environment": "Soutien à l'environnement",
+  "last_version": "Dernières {{number}} versions ",
+  "setup": "Étant donné que l'interface utilisateur allure est hébergée sur le flux _ de promet, vous devez créer un fichier .npmrc sous le dossier racine de votre projet d'interface utilisateur.",
+  "install": "Installez ensuite le package {{name}} UI:",
+  "usage": "Dans le fichier racine de votre application React, import {{name}} ui et définissez le thème et la langue correspondants."
+}

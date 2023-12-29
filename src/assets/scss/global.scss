@@ -24,6 +24,10 @@ body {
 }
 
 .layout {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
   main {
     display: flex;
   }
@@ -31,4 +35,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.img-not-found {
+  margin-top: 10rem;
+  width: 70rem;
+  height: 30rem;
 }

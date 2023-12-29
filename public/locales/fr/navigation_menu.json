@@ -1,0 +1,20 @@
+{
+  "title": "le menu de navigation",
+  "desc": "Le menu de navigation est la liste des liens auxquels l'utilisateur peut toujours accéder.",
+  "usage_1": "Qui contient les liens de fonctions principales. Une navigation de fonction principale peut avoir des éléments de sous-navigation en utilisant un style de hiérarchie.",
+  "usage_2": "Les icônes de la barre de navigation servent d'offre visuelle qui indique que l'article est exploitable. Par exemple, lorsqu'il oscille un élément de navigation, il apparaîtra en couleur bleu plus claire comme arrière-plan.",
+  "usage_3": "Si un élément de navigation est un groupe, il n'a pas la fonction d'accès à d'autres pages. Ne peut que développer ou effondrer le groupe d'articles de navigation.",
+  "dashboard": "Tableau de bord",
+  "user_management": "Gestion des utilisateurs",
+  "sub_nav_item1": "Sub Nav Item1",
+  "sub_nav_item2": "Sub Nav Item2",
+  "sub_nav_item3": "Sub Nav Item3",
+  "user_long": "Gestion des utilisateurs avec un long titre",
+  "sub_long": "Sub Item1 avec long titre long titre long tit long long title long long title long long title title title long long long tit long long long",
+  "templates": "Modèles",
+  "help": "Aide",
+  "settings": "Paramètres",
+  "collapse": "À la navigation",
+  "collapse_desc": "Le menu de navigation est toujours effondré.",
+  "light": "Lumière"
+}

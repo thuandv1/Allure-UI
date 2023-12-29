@@ -1,16 +1,5 @@
-const heading = "Wizard";
-const desc =
-  "Wizard is a progress indicator that communicates to the user the progress of a particular process.";
-
-const whenToUse = {
-  title: "When to use",
-  desc: "Use a wizard when a user needs to fill or operate a lot of content, especially when this content has hierarchy relationships."
-};
-
 const usage = {
   horizontal: {
-    title: "Horizontal Wizard",
-    desc: "Horizontal wizards are ideal when the contents of one step depend on an earlier step. Avoid using long step names in horizontal wizards.",
     code: `import * as React from "react";
 import { Stepper, Step, SecondaryText, IStepProps, Stack, DefaultButton, PrimaryButton } from "@gui/fluent-ui-allure";
 
@@ -58,8 +47,6 @@ export const SampleHorizontal = () => {
 };`
   },
   vertical: {
-    title: "Vertical Wizard",
-    desc: "The vertical wizard offers room for growth. It can be extended if one step contains sub-steps, or the number of steps increases.",
     code: `import * as React from "react";
 import { Stepper, Step, Text, IStepProps, Stack, DefaultButton, PrimaryButton } from "@gui/fluent-ui-allure";
 
@@ -128,4 +115,4 @@ export const SampleVertical = () => {
   }
 };
 
-export { heading, desc, usage, whenToUse };
+export { usage };

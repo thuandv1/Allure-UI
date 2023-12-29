@@ -1,0 +1,17 @@
+{
+  "title": "Design principle",
+  "useful": "Useful",
+  "usable": "Usable",
+  "efficiency": "Efficiency",
+  "consistency": "Consistency",
+  "accessible": "Accessible",
+  "collaborative": "Collaborative",
+  "responsive": "Responsive",
+  "useful_desc": "Our users' content always comes first - make sure we're focusing the user's business goals and always be task driven.",
+  "usable_desc": "All the users can use it without difficulties. The content needs to be clear and easy to find. Functions need to be easily accessed and efficient.",
+  "efficiency_desc": "We choose to display UI elements only when they are needed, rather than make them available at all times.",
+  "consistency_desc": "Create familiarity and strengthen intuition by applying the same solution to the same questions can reduce the learning cost.",
+  "accessible_desc": "All page designs meet accessibility requirements in terms of color contrast, navigation alternatives, and more guidelines based on WCAG 2.0.",
+  "collaborative_desc": "We provide a wealth of teaching activities and enable teamwork.",
+  "responsive_desc": "Using an 8-pixel base unit allows components to scale consistently across all display sizes."
+}

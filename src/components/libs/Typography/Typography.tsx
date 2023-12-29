@@ -1,14 +1,18 @@
+import { useTranslation } from "react-i18next";
+
 import SectionContent from "components/SectionContent";
 import Content from "components/base/Content";
-import { heading, desc, usage } from "data/typography";
+import { usage } from "data/typography";
 import { SampleText } from "./Sample/SampleText";
 
 function Typography() {
+  const [t] = useTranslation("typography");
+
   return (
-    <Content title={heading} desc={desc}>
-      <SectionContent title={usage.spacing.title} desc={usage.spacing.desc} />
+    <Content title={t("title")} desc={t("desc")}>
+      <SectionContent title={t("spacing")} desc={usage.spacing.desc} />
       <SectionContent
-        title={usage.font.title}
+        title={t("font")}
         extraCode={usage.font.code}
         component={<SampleText />}
       />

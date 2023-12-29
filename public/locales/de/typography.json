@@ -1,0 +1,20 @@
+{
+  "title": "Typografie",
+  "desc": "Dies ist eine Komponente zum Anzeigen von Text. Sie können dies verwenden, um Text in Ihrem System zu standardisieren.",
+  "spacing": "Buchstaben-Abstand",
+  "font": "Schriftart Konvent",
+  "page_header": "Page -Header -Titel",
+  "large_header": "Den großen fett gedruckt",
+  "medium_header": "Kopfmedium fett",
+  "bold_header": "Kühne Überschrift",
+  "semi_header": "Halbdehnung",
+  "default": "Standardkörper",
+  "secondary": "Sekundärtext",
+  "breadcrumb": "Breadcrumb",
+  "calendar": "Kalendermonat/Jahr",
+  "panel": "Panel- und Popup -Titel",
+  "section": "Abschnittstitel, Tabelle Primärspaltenwert",
+  "label": "Beschriftungstitel, Tabellenspaltenname, Aktion",
+  "body": "Körper",
+  "watermark": "Beschreibung, Wasserzeichen"
+}

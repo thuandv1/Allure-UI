@@ -1,0 +1,9 @@
+{
+  "title": "Languette {{index}}",
+  "desc": "Les onglets conservent le contenu connexe dans un seul conteneur qui est affiché et caché par la navigation.",
+  "usage_desc": "N'affichez pas trop d'onglets à la fois, l'utilisateur ne se souvient pas de plus de 7 à 9 noms. Effondrer le reste des onglets sur \"...\" Plus d'action.",
+  "card": "Style de carte",
+  "card_desc": "Les onglets sont appelés cartes. Choisissez un onglet de style carte en fonction de la mise en page de votre page.",
+  "vertical": "Tabs verticaux",
+  "vertical_desc": "Les onglets verticaux sont les onglets disposés à gauche dans un espace vertical, au lieu du dessus dans un espace horizontal."
+}

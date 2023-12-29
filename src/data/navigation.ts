@@ -1,16 +1,5 @@
-const heading = "Navigation Menu";
-const desc =
-  "Navigation menu is the list of links that the user can always access.";
-
 const usage = {
-  uses: [
-    "Which contains the main functions links. A main function navigation can have sub-navigation items by using a hierarchy style.",
-    "Icons in the navigation bar serve as a visual affordance that indicates the item is actionable. For example, when hovering a navigation item, it will appear lighter blue color as the background.",
-    "If a navigation item is a group, it does not have the function to access other pages. Only can expand or collapse the navigation item group."
-  ],
   basic: {
-    title: "Usage",
-    desc: "When there is only 1 level breadcrumb, it is not clickable. But the text color is black.",
     lightCode: `import * as React from 'react';
 import { INavLinkGroup, INavLink, Nav } from '@gui/fluent-ui-allure';
 
@@ -331,8 +320,6 @@ export class NavView extends React.Component<unknown, IState> {
 }`
   },
   collapsed: {
-    title: "Navigation-Collapsed",
-    desc: "The navigation menu is always collapsed.",
     lightCode: `import * as React from 'react';
 import { INavLinkGroup, INavLink, Nav } from '@gui/fluent-ui-allure';
 import { Logo } from '../../Images';
@@ -608,4 +595,4 @@ export class NavigationCollapsedView extends React.Component<unknown, IState> {
   }
 };
 
-export { heading, desc, usage };
+export { usage };

@@ -6,18 +6,21 @@ import {
   IconButton,
   IContextualMenuProps
 } from "@gui/fluent-ui-allure";
+import { useTranslation } from "react-i18next";
 
 export const ContextMenuButton = () => {
+  const [t] = useTranslation("button");
+
   const menuProps: IContextualMenuProps = {
     items: [
       {
         key: "k1",
-        text: "Email message",
+        text: t("email"),
         iconProps: { iconName: "fas-envelope" }
       },
       {
         key: "k2",
-        text: "Calendar event",
+        text: t("calendar"),
         iconProps: { iconName: "fas-calendar-days" },
         subMenuProps: {
           calloutProps: {
@@ -27,12 +30,12 @@ export const ContextMenuButton = () => {
           items: [
             {
               key: "k2-1",
-              text: "Meeting",
+              text: t("meeting"),
               iconProps: { iconName: "fas-envelope" }
             },
             {
               key: "k2-2",
-              text: "Startup",
+              text: t("startup"),
               iconProps: { iconName: "fas-envelope" }
             }
           ]
@@ -44,16 +47,16 @@ export const ContextMenuButton = () => {
 
   return (
     <Stack horizontal tokens={{ childrenGap: 16 }}>
-      <DefaultButton menuProps={menuProps}>Outline</DefaultButton>
+      <DefaultButton menuProps={menuProps}>{t("outline")}</DefaultButton>
 
       <DefaultButton
         iconProps={{ iconName: "fas-rotate-right" }}
         menuProps={menuProps}
       >
-        Outline
+        {t("outline")}
       </DefaultButton>
 
-      <PrimaryButton menuProps={menuProps}>Button Group</PrimaryButton>
+      <PrimaryButton menuProps={menuProps}>{t("group")}</PrimaryButton>
 
       <IconButton
         bordered

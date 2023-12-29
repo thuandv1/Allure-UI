@@ -1,0 +1,18 @@
+{
+  "usage": "Verwendung",
+  "basic_usage": "Grundnutzung",
+  "install": "Installation",
+  "design_system": "{{name}} Designsystem",
+  "when_to_use": "Wann zu verwenden",
+  "search": "Geben Sie Suchschlüsselwort ein",
+  "company_name": "Avepoint",
+  "app_name": "Allure {{text}}",
+  "question_search": "Wonach suchst du?",
+  "search_docs": "Suchen Sie Dokumente",
+  "no_results": "Keine Ergebnisse für",
+  "cancel": "Stornieren",
+  "submit": "Einreichen",
+  "ok": "OK",
+  "input": "Eingang",
+  "loading": "Wird geladen"
+}

@@ -1,9 +1,15 @@
+import { Suspense } from "react";
+import { publicRoutes } from "routes";
+import { Loading } from "@gui/fluent-ui-allure";
+import { useTranslation } from "react-i18next";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 
 import DefaultLayout from "layouts/DefaultLayout";
-import { publicRoutes } from "routes";
+import { NotFoundImg } from "assets/images";
 
 function Router() {
+  const [t] = useTranslation("common");
+
   return (
     <BrowserRouter>
       <Routes>
@@ -16,9 +22,20 @@ function Router() {
           }
         >
           {publicRoutes.map(({ path, component: Page }) => (
-            <Route key={path} path={path} element={<Page />} />
+            <Route
+              key={path}
+              path={path}
+              element={
+                <Suspense fallback={<Loading>{t("loading")}</Loading>}>
+                  <Page />
+                </Suspense>
+              }
+            />
           ))}
-          <Route path="*" element={<h2>Ongoing</h2>} />
+          <Route
+            path="*"
+            element={<img className="img-not-found" src={NotFoundImg} alt="" />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>

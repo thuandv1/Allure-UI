@@ -1,0 +1,16 @@
+{
+  "title": "Dialogue",
+  "desc": "Les boîtes de dialogue sont un contrôle modal. Il s'agit d'une fenêtre contextuelle temporaire qui oblige les utilisateurs à interagir avec l'application.",
+  "uses_1": "Il est utilisé pour confirmer des actions, telles que supprimer / annuler un article, demander aux gens de le remarquer.",
+  "uses_2": "L'utilisateur doit faire des choix avant l'étape suivante. Lorsque le résultat de l'erreur a besoin que l'utilisateur fasse attention, utilisez la boîte de dialogue pour afficher l'alerte.",
+  "layout": "Mise en page:",
+  "layout_desc": "Largeur par défaut: 480px, la hauteur maximale peut être de 80% x courant. Browser-Height. Lorsque l'espace de contenu est plein, il devrait commencer à faire défiler verticalement. Vous devez éviter le défilement horizontal.",
+  "header": "Entête:",
+  "header_desc": "Fournissez un titre à gauche et gardez le titre aussi simple et intuitif que possible, tel que «supprimer» «avertissement»",
+  "button": "Bouton:",
+  "button_desc": "Comprend un bouton principal. Un bouton secondaire est facultatif. Le bouton de confirmation primaire est toujours placé sur le côté droit. Étiquettes de bouton d'écriture qui sont des réponses spécifiques aux informations principales du titre. Le titre «Supprimer ce fichier?» pourrait avoir des boutons étiquetés «supprimer» et «annuler» la clé ESC agit comme un effet «annuler».",
+  "open": "Ouvrir la boîte de dialogue",
+  "confirm": "Confirmer",
+  "email_confirm": "Courriel Confirmer",
+  "email_text": "Voulez-vous envoyer ce message sans sujet? Si vous souhaitez envoyer, veuillez cliquer sur «Envoyer», ou vous pouvez annuler en appuyant sur «Don't Send» ou «Fermer»."
+}

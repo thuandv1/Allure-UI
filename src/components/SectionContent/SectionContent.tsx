@@ -59,7 +59,11 @@ function SectionContent(props: ISectionContentProps) {
   return (
     <div className={cx("section")}>
       <h3 className={cx("title")}>{title}</h3>
-      {desc && <p className={cx("desc")}>{desc}</p>}
+      {desc && (
+        <p style={{ whiteSpace: "pre-line" }} className={cx("desc")}>
+          {desc}
+        </p>
+      )}
       {uses && renderList}
       {component && <div className={cx("component")}>{component}</div>}
       {children}

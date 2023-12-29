@@ -1,0 +1,12 @@
+{
+  "cobalt": "コバルト",
+  "teal": "ティール",
+  "ochre": "黄土",
+  "violet": "バイオレット",
+  "magenta": "赤紫色",
+  "lavender": "ラベンダー",
+  "pewter": "ピューター",
+  "mint": "ミント",
+  "custom": "カスタムテーマの色",
+  "theme": "テーマ：{{theme}}"
+}

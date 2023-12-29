@@ -1,0 +1,20 @@
+{
+  "title": "Navigationsmenü",
+  "desc": "Das Navigationsmenü ist die Liste der Links, auf die der Benutzer immer zugreifen kann.",
+  "usage_1": "Die die Hauptfunktionsverbindungen enthält. Eine Hauptfunktionsnavigation kann unter Verwendung eines Hierarchiestils Unteranlagen aufweisen.",
+  "usage_2": "Die Symbole in der Navigationsleiste dienen als visuelles Leistungsverhältnis, der angibt, dass das Element umsetzbar ist. Wenn Sie beispielsweise ein Navigationselement schweben, erscheint es heller blau als Hintergrund.",
+  "usage_3": "Wenn ein Navigationselement eine Gruppe ist, hat es nicht die Funktion, auf andere Seiten zuzugreifen. Kann die Navigationselementgruppe nur erweitern oder zusammenbrechen.",
+  "dashboard": "Armaturenbrett",
+  "user_management": "Benutzerverwaltung",
+  "sub_nav_item1": "Sub Navig Item1",
+  "sub_nav_item2": "Sub Navig Item2",
+  "sub_nav_item3": "SUB NAV Item3",
+  "user_long": "Benutzerverwaltung mit langem Titel",
+  "sub_long": "Sub nav item1 mit lang langem tital lang langer tital lang lang lang lang langer titel lang langer titeltitel lang langer tital lang lang lang lang lang",
+  "templates": "Vorlagen",
+  "help": "Helfen",
+  "settings": "Einstellungen",
+  "collapse": "Navigationskollaps",
+  "collapse_desc": "Das Navigationsmenü ist immer zusammengebrochen.",
+  "light": "Licht"
+}

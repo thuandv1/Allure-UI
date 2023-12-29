@@ -1,21 +1,16 @@
 import { useMemo, useState } from "react";
 import { Pivot, PivotItem, SearchBox } from "@gui/fluent-ui-allure";
+import { useTranslation } from "react-i18next";
 
 import Content from "components/base/Content";
-import {
-  heading,
-  desc,
-  tabs,
-  allureIcon,
-  officeIcon,
-  awesomeIcon
-} from "data/iconGallery";
+import { tabs, allureIcon, officeIcon, awesomeIcon } from "data/iconGallery";
 import TypoUsage from "components/TypoUsage/TypoUsage";
 import IconList from "./IconList";
-import useDebounce from "hooks/useDebounce";
 
 function IconGalleryContent() {
   const [searchTerm, setSearchTerm] = useState("");
+
+  const [t] = useTranslation("icon_gallery");
 
   const filteredAllureIcons = useMemo(
     () =>
@@ -51,14 +46,14 @@ function IconGalleryContent() {
   };
 
   return (
-    <Content title={heading} desc={desc}>
-      <TypoUsage />
+    <Content title={t("title")} desc={t("desc")}>
+      <TypoUsage text={t("use")} />
       <SearchBox
         onChange={(e) => handleSearch(e?.currentTarget?.value)}
         style={{ display: "flex", flexDirection: "row-reverse" }}
         styles={{ root: { height: 40 } }}
         showIcon
-        placeholder="Search..."
+        placeholder={t("search")}
       />
       <Pivot style={{ marginTop: 10 }}>
         {tabs.map((tab, index) => (

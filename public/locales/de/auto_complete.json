@@ -1,0 +1,10 @@
+{
+  "title": "Automatisch vervollständigt",
+  "desc": "Das Datumsfeld kann automatisch ausgefüllt werden oder den Benutzern eine Optionsliste zeigen, die frühere Informationen gespeichert hat, z. B. den Namen oder die Adresse eines Benutzers. Wenn ein Benutzer einen Wert eingibt, kann die Auswahlsteuerung die übereinstimmenden Ergebnisse automatisch laden.",
+  "use_1": "Verwenden Sie das automatische Feld, wenn der Benutzer dazu neigt, die bereits eingegebenen Daten zu verwenden.",
+  "use_2": "Suche nach übereinstimmenden Werten aus der Liste",
+  "use_3": "Globale Suche, alles, was mit den Schlüsselwörtern übereinstimmte, wird angezeigt",
+  "basic_desc": "Geben Sie ein Schlüsselwort für Name, E -Mail -Adresse, Postleitzahl usw. ein.",
+  "search": "Suchen",
+  "search_desc": "Geben Sie Schlüsselwörter mit einem Suchsymbol ein."
+}

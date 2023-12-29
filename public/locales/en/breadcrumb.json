@@ -1,0 +1,21 @@
+{
+  "title": "Breadcrumb",
+  "desc": "It display by the page hierarchy and allows user to know where they are. Better to have this breadcrumb navigation except for homepage.",
+  "dont_use": "Don't use when:",
+  "dont_1": "Product has no logical hierarchy",
+  "dont_2": "There are too many navigation options that are very close together.",
+  "dont_3": "Breadcrumb cannot replace the primary navigation.",
+  "usage_desc": "When there is only 1 level breadcrumb, it is not clickable. But the text color is black.",
+  "home": "Home",
+  "usage_desc_1": "Some links may not be clickable.",
+  "non_click": "(non-clickable)",
+  "sub": "Sub",
+  "detail": "Detail",
+  "application": "Application",
+  "management": "management",
+  "usage_desc_2": "Example for multi-parent nodes. This is a common style.",
+  "usage_desc_3": "Show ... in the middle of breadcrumb when there are so many nodes that cannot show all at the same time. Always keep the first level and the last level visible.",
+  "usage_desc_4": "Show ... at the beginning of breadcrumb when there are so many nodes that cannot show all at the same time. Always keep the last level visible.",
+  "second": "Second level",
+  "third": "Third level"
+}

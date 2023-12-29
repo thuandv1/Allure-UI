@@ -1,4 +1,5 @@
-import { useState, useMemo } from "react";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Stack,
   IAutoCompleteStyles,
@@ -6,12 +7,12 @@ import {
   Icon
 } from "@gui/fluent-ui-allure";
 import classNames from "classnames/bind";
+import { Link } from "react-router-dom";
 
 import styles from "./SearchBar.module.scss";
 import { ModalCustom } from "components/base/Modal/Modal";
 import { LeftBarModules } from "constants/leftBarModules";
-import { Link } from "react-router-dom";
-import { nameToPath } from "helpers";
+import { nameToPath, nameToKey } from "helpers";
 import NotFound from "components/base/NotFound/NotFound";
 
 interface ISearchBarProps {
@@ -32,6 +33,8 @@ const SearchBar = (props: ISearchBarProps) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResult, setSearchResult] = useState(initialResult);
 
+  const [t] = useTranslation(["left_bar", "common"]);
+
   const handleSearch = (value = "") => {
     const searchValue = value.trim();
 
@@ -44,7 +47,7 @@ const SearchBar = (props: ISearchBarProps) => {
 
     setSearchResult(
       modulesName.filter((module) =>
-        module.toLowerCase().includes(searchValue.toLowerCase())
+        t(nameToKey(module)).toLowerCase().includes(searchValue.toLowerCase())
       )
     );
   };
@@ -59,7 +62,7 @@ const SearchBar = (props: ISearchBarProps) => {
   };
 
   const styles: Partial<IAutoCompleteStyles> = {
-    root: { width: 220, height: 40 }
+    root: { width: 250, height: 40 }
   };
 
   return (
@@ -70,7 +73,7 @@ const SearchBar = (props: ISearchBarProps) => {
         placeholder={placeholder}
       />
       <ModalCustom
-        heading="What are you looking for?"
+        heading={t("common:question_search")}
         isModalOpen={isModalOpen}
         onModalClose={handleCloseModal}
       >
@@ -80,7 +83,7 @@ const SearchBar = (props: ISearchBarProps) => {
               onChange={(e) => handleSearch(e?.currentTarget?.value)}
               autoFocus
               type="text"
-              placeholder="Search docs"
+              placeholder={t("common:search_docs")}
             />
           </div>
           {searchResult.length ? (
@@ -92,7 +95,7 @@ const SearchBar = (props: ISearchBarProps) => {
                   key={module}
                 >
                   <Icon iconName="far-bookmark" />
-                  {module}
+                  {t(nameToKey(module))}
                 </Link>
               ))}
             </div>

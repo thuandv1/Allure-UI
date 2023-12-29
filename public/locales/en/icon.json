@@ -1,0 +1,6 @@
+{
+  "title": "Icon",
+  "desc": "Icon provides visual context and enhances usability. It is often used as an action. Display the icon when it is available. Otherwise, they will be disabled. Always use a show full name when hovering on an icon, there will be a tooltip to display its full name.",
+  "free": "free",
+  "custom": "with custom color"
+}

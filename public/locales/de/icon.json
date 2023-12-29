@@ -1,0 +1,6 @@
+{
+  "title": "Symbol",
+  "desc": "Icon bietet einen visuellen Kontext und verbessert die Benutzerfreundlichkeit. Es wird oft als Aktion verwendet. Zeigen Sie das Symbol an, wenn es verfügbar ist. Andernfalls werden sie deaktiviert. Verwenden Sie immer einen vollständigen Namen, wenn Sie auf einem Symbol schweben. Es gibt einen Tooltip, um den vollständigen Namen anzuzeigen.",
+  "free": "frei",
+  "custom": "mit benutzerdefinierter Farbe"
+}

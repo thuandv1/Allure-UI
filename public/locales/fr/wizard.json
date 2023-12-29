@@ -1,0 +1,22 @@
+{
+  "title": "Magicien",
+  "desc": "L'assistant est un indicateur de progrès qui communique à l'utilisateur la progression d'un processus particulier.",
+  "use_desc": "Utilisez un assistant lorsqu'un utilisateur doit remplir ou utiliser beaucoup de contenu, en particulier lorsque ce contenu a des relations de hiérarchie.",
+  "horizontal": "Sorcier horizontal",
+  "horizontal_desc": "Les sorciers horizontaux sont idéaux lorsque le contenu d'une étape dépend d'une étape antérieure. Évitez d'utiliser des noms de longue durée dans les sorciers horizontaux.",
+  "general": "Général",
+  "template": "Modèle",
+  "authentication": "Authentification",
+  "optional": "Facultatif",
+  "review": "Revoir",
+  "content": "Contenu",
+  "next": "Suivant",
+  "vertical": "Verticale",
+  "vertical_desc": "L'assistant vertical offre de la place à la croissance. Il peut être étendu si une étape contient des sous-étapes ou si le nombre d'étapes augmente.",
+  "progress": "Vos progrès",
+  "general_detail": "Lorsque l'étape est active, nous pouvons afficher une brève description ici sur ce que cette étape implique.",
+  "security": "Les paramètres de sécurité",
+  "summary": "Résumé",
+  "finish": "Finition",
+  "back": "Dos"
+}

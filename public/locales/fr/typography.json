@@ -1,0 +1,20 @@
+{
+  "title": "Typographie",
+  "desc": "Il s'agit d'un composant pour afficher du texte. Vous pouvez l'utiliser pour normaliser le texte sur votre système.",
+  "spacing": "L'espacement des lettres",
+  "font": "Convention de police",
+  "page_header": "Titre d'en-tête de page",
+  "large_header": "Se diriger de gros gras",
+  "medium_header": "En-tête moyen audacieux",
+  "bold_header": "Tête audacieux",
+  "semi_header": "Tête de demi-clôture",
+  "default": "Corps par défaut",
+  "secondary": "Texte secondaire",
+  "breadcrumb": "Miette de pain",
+  "calendar": "Mois / année civile",
+  "panel": "Titre de panneau et popup",
+  "section": "Titre de la section, Tableau Valeur de la colonne primaire",
+  "label": "Titre de l'étiquette, nom de la colonne de table, action",
+  "body": "Corps",
+  "watermark": "Description, filigrane"
+}

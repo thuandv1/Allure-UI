@@ -10,9 +10,12 @@ import {
   Toggle,
   TooltipHost
 } from "@gui/fluent-ui-allure";
+import { useTranslation } from "react-i18next";
 
 export const DisableButton = () => {
   const [enableFocus, setEnableFocus] = React.useState(false);
+  const [t] = useTranslation("button");
+
   return (
     <Stack>
       <Toggle
@@ -20,55 +23,55 @@ export const DisableButton = () => {
         onChange={(_, checked = false) => {
           setEnableFocus(checked);
         }}
-        label="Enable focus on disabled buttons"
+        label={t("enable_text")}
         inlineLabel
       />
       <Stack horizontal tokens={{ childrenGap: 16 }}>
-        <TooltipHost content="This button is disabled because we set disabled property">
+        <TooltipHost content={t("content")}>
           <TextButton allowDisabledFocus={enableFocus} disabled>
-            Normal button
+            {t("normal")}
           </TextButton>
         </TooltipHost>
-        <TooltipHost content="This button is disabled because we set disabled property">
+        <TooltipHost content={t("content")}>
           <DefaultButton allowDisabledFocus={enableFocus} disabled>
-            Outline
+            {t("outline")}
           </DefaultButton>
         </TooltipHost>
-        <TooltipHost content="This button is disabled because we set disabled property">
+        <TooltipHost content={t("content")}>
           <DefaultButton
             allowDisabledFocus={enableFocus}
             disabled
             iconProps={{ iconName: "fas-rotate-right" }}
           >
-            Outline
+            {t("outline")}
           </DefaultButton>
         </TooltipHost>
-        <TooltipHost content="This button is disabled because we set disabled property">
+        <TooltipHost content={t("content")}>
           <PrimaryButton allowDisabledFocus={enableFocus} disabled>
-            Filled button
+            {t("filled")}
           </PrimaryButton>
         </TooltipHost>
-        <TooltipHost content="This button is disabled because we set disabled property">
+        <TooltipHost content={t("content")}>
           <PrimaryButton
             allowDisabledFocus={enableFocus}
             disabled
             iconProps={{ iconName: "fas-rotate-right" }}
           >
-            Filled button
+            {t("filled")}
           </PrimaryButton>
         </TooltipHost>
         <TooltipHost
           styles={{ root: { display: "flex !important" } }}
-          content="This button is disabled because we set disabled property"
+          content={t("content")}
         >
-          <Link disabled>Link button</Link>
+          <Link disabled>{t("link")}</Link>
         </TooltipHost>
-        <TooltipHost content="This button is disabled because we set disabled property">
+        <TooltipHost content={t("content")}>
           <DashedButton allowDisabledFocus={enableFocus} disabled>
-            Dashed button
+            {t("dashed")}
           </DashedButton>
         </TooltipHost>
-        <TooltipHost content="This button is disabled because we set disabled property">
+        <TooltipHost content={t("content")}>
           <IconButton
             allowDisabledFocus={enableFocus}
             bordered

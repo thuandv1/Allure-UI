@@ -1,0 +1,12 @@
+{
+  "cobalt": "Kobalt",
+  "teal": "Blaugrün",
+  "ochre": "Ocker",
+  "violet": "Violett",
+  "magenta": "Magenta",
+  "lavender": "Lavendel",
+  "pewter": "Zinn",
+  "mint": "Minze",
+  "custom": "Benutzerdefinierte Themenfarbe",
+  "theme": "Thema: {{theme}}"
+}

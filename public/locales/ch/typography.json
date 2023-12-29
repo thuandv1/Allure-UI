@@ -1,0 +1,20 @@
+{
+  "title": "排版",
+  "desc": "这是用于显示文本的组件。您可以将其用于整个系统中的文本标准化。",
+  "spacing": "字母间距",
+  "font": "字体大会",
+  "page_header": "页面标题",
+  "large_header": "大胆大胆",
+  "medium_header": "标题中等大胆",
+  "bold_header": "大胆的标题",
+  "semi_header": "半决赛标题",
+  "default": "默认主体",
+  "secondary": "次要文字",
+  "breadcrumb": "面包屑",
+  "calendar": "日历月/年",
+  "panel": "面板和弹出标题",
+  "section": "章节标题，表主要列值",
+  "label": "标签标题，表列名称，动作",
+  "body": "身体",
+  "watermark": "描述，水印"
+}

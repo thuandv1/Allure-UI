@@ -1,7 +1,10 @@
 import * as React from "react";
 import { Breadcrumb, IBreadcrumbItem } from "@gui/fluent-ui-allure";
+import { useTranslation } from "react-i18next";
 
 export const SampleMaxDisplayedItems = () => {
+  const [t] = useTranslation("breadcrumb");
+
   function onItemClick(
     ev?: React.MouseEvent<HTMLElement>,
     item?: IBreadcrumbItem
@@ -10,11 +13,15 @@ export const SampleMaxDisplayedItems = () => {
   }
 
   const items: IBreadcrumbItem[] = [
-    { text: "Home", key: "k1", onClick: onItemClick },
-    { text: "Second Level", key: "k2", onClick: onItemClick },
-    { text: "Third Level", key: "k3", onClick: onItemClick },
-    { text: "Application management", key: "k4", onClick: onItemClick },
-    { text: "Application detail", key: "k5" }
+    { text: t("home"), key: "k1", onClick: onItemClick },
+    { text: t("second"), key: "k2", onClick: onItemClick },
+    { text: t("third"), key: "k3", onClick: onItemClick },
+    {
+      text: `${t("application")} ${t("management")}`,
+      key: "k4",
+      onClick: onItemClick
+    },
+    { text: `${t("application")} ${t("detail").toLowerCase()}`, key: "k5" }
   ];
 
   return (

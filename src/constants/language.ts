@@ -1,7 +1,11 @@
 enum LanguageEnum {
-  EN = "English",
-  JP = "Japan",
-  CH = "China"
+  en = "English",
+  jp = "Japan",
+  ch = "China",
+  de = "German",
+  fr = "French"
 }
 
-export { LanguageEnum };
+const LANGUAGE_KEY = "lang";
+
+export { LanguageEnum, LANGUAGE_KEY };

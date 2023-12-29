@@ -3,7 +3,7 @@ import MainContent from "components/libs/MainContent";
 import { routes } from "configs";
 import ButtonContent from "components/libs/ButtonContent/ButtonContent";
 import DesignPrincipleContent from "components/libs/DesignPrincipleContent";
-import IconGalleryContent from "components/libs/IconGalleryContent/IconGalleryContent";
+import IconGalleryContent from "components/libs/IconGalleryContent";
 import IconContent from "components/libs/IconContent";
 import Dialog from "components/libs/Dialog";
 import Typography from "components/libs/Typography";
@@ -29,10 +29,6 @@ const publicRoutes = [
     component: DesignPrincipleContent
   },
   {
-    path: routes.ChangeLog,
-    component: DesignPrincipleContent
-  },
-  {
     path: routes.Button,
     component: ButtonContent
   },
@@ -43,10 +39,6 @@ const publicRoutes = [
   {
     path: routes.Icon,
     component: IconContent
-  },
-  {
-    path: routes.CommonProduct,
-    component: IconGalleryContent
   },
   {
     path: routes.Typography,

@@ -1,0 +1,10 @@
+{
+  "title": "AutoComplete",
+  "desc": "The date field can be automatically filled or show users an option list that stored previous information, such as a user's name or address. When a user enters a value, the selection control can auto-load the matched results.",
+  "use_1": "Use auto-complete field when the user tends to use the data that he/she already entered before.",
+  "use_2": "Search for matched values from list",
+  "use_3": "Global search, anything that matched the keywords will be displayed",
+  "basic_desc": "Enter a keyword for name, email address, postal code, and so on.",
+  "search": "Search",
+  "search_desc": "Enter keywords with a search icon."
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Dialog",
+  "desc": "Dialoge sind modale Kontrolle. Es handelt sich um ein temporäres Popup, bei dem Benutzer mit der Anwendung interagieren müssen.",
+  "uses_1": "Es wird zur Bestätigung von Aktionen verwendet, z. B. einen Artikel löschen/abbrechen, wobei die Personen aufgefordert werden, es zu bemerken.",
+  "uses_2": "Der Benutzer muss vor dem nächsten Schritt einige Auswahlmöglichkeiten treffen. Wenn das Fehlerergebnis den Benutzer benötigt, um Aufmerksamkeit zu schenken, werden Sie mit dem Dialogfeld die Warnung angezeigt.",
+  "layout": "Layout:",
+  "layout_desc": "Standardbreite: 480px, maximale Höhe kann 80%x Strom betragen. Browserhohe. Wenn der Inhaltsraum voll ist, sollte er vertikal scrollen. Sie sollten horizontales Scrollen vermeiden.",
+  "header": "Header:",
+  "header_desc": "Geben Sie links einen Titel an und halten Sie den Titel so einfach und intuitiv wie möglich, z. B. \"Löschen\" \"Warnung\"",
+  "button": "Taste:",
+  "button_desc": "Enthält einen Primärknopf. Eine sekundäre Taste ist optional. Die primäre Bestätigungsknopf wird immer auf der rechten Seite platziert. Schreiben Sie Schaltflächenbezeichnungen, die spezifische Antworten auf die Hauptinformationen im Titel sind. Der Titel \"Löschen dieser Datei?\" Könnten Schaltflächen mit der Bezeichnung „Löschen“ und „Abbrechen“ den ESC -Schlüssel wie ein \"Abbrechen\" -Effekt haben.",
+  "open": "Dialog öffnen",
+  "confirm": "Bestätigen",
+  "email_confirm": "Email bestätigen",
+  "email_text": "Möchten Sie diese Nachricht ohne Betreff senden? Wenn Sie senden möchten, klicken Sie bitte auf \"Senden\", oder Sie können abbrechen, indem Sie \"Nicht senden\" oder \"Schließen\" drücken."
+}

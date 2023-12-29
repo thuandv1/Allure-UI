@@ -1,0 +1,22 @@
+{
+  "title": "Magier",
+  "desc": "Assistent ist ein Fortschrittsindikator, der dem Benutzer den Fortschritt eines bestimmten Prozesses mitteilt.",
+  "use_desc": "Verwenden Sie einen Assistenten, wenn ein Benutzer viel Inhalt füllen oder bedienen muss, insbesondere wenn dieser Inhalt hierarchie -Beziehungen hat.",
+  "horizontal": "Horizontaler Zauberer",
+  "horizontal_desc": "Horizontale Zauberer sind ideal, wenn der Inhalt eines Schritts von einem früheren Schritt abhängt. Vermeiden Sie die Verwendung langer Stufennamen in horizontalen Assistenten.",
+  "general": "Allgemein",
+  "template": "Vorlage",
+  "authentication": "Authentifizierung",
+  "optional": "Optional",
+  "review": "Rezension",
+  "content": "Inhalt",
+  "next": "Nächste",
+  "vertical": "Vertikal",
+  "vertical_desc": "Der vertikale Assistent bietet Raum für Wachstum. Es kann erweitert werden, wenn ein Schritt Unterschritte enthält oder die Anzahl der Schritte zunimmt.",
+  "progress": "Dein Fortschritt",
+  "general_detail": "Wenn der Schritt aktiv ist, können wir hier eine kurze Beschreibung darüber zeigen, was dieser Schritt beinhaltet.",
+  "security": "Sicherheitseinstellungen",
+  "summary": "Zusammenfassung",
+  "finish": "Beenden",
+  "back": "Zurück"
+}

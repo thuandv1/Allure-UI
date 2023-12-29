@@ -13,6 +13,7 @@ import {
 } from "@gui/fluent-ui-allure";
 
 import "@progress/kendo-react-animation";
+import { useTranslation } from "react-i18next";
 
 const cssRule = `
 .filter-tree .k-disabled {
@@ -36,16 +37,16 @@ const treeData: TreeViewDataItem[] = [
   {
     text: "Furniture",
     items: [
-      { text: "Tables & Chairs" },
+      { text: "tables_chairs" },
       { text: "Sofas" },
-      { text: "Occasional Furniture" }
+      { text: "occasional_furniture" }
     ]
   },
   {
     text: "Decor",
     items: [
-      { text: "Bed Linen" },
-      { text: "Curtains & Blinds" },
+      { text: "bed_linen" },
+      { text: "curtains_blinds" },
       { text: "Carpets" }
     ]
   }
@@ -58,6 +59,8 @@ const styles: Partial<ISearchBoxStyles> = {
 };
 
 export const SampleFilter = () => {
+  const [t] = useTranslation(["tree", "icon_gallery"]);
+
   const [searchText, setSearchText] = React.useState("");
   const [check, setCheck] = React.useState({
     applyCheckIndeterminate: true,
@@ -132,7 +135,7 @@ export const SampleFilter = () => {
     <div className="filter-tree" style={{ width: 430 }}>
       <SearchBox
         styles={styles}
-        placeholder="Search..."
+        placeholder={t("icon_gallery:search")}
         showIcon
         value={searchText}
         onChange={(ev, v) => {
@@ -141,11 +144,29 @@ export const SampleFilter = () => {
         }}
       />
       <TreeView
-        data={processTreeViewItems(tree, {
-          select: select,
-          check: check,
-          expand: expand
-        })}
+        data={processTreeViewItems(
+          tree.map((node) => ({
+            ...node,
+            text: t(node.text.toLowerCase()),
+            items: node.items
+              ? node.items.map((subNode) => ({
+                  ...subNode,
+                  text: t(subNode.text.toLowerCase()),
+                  items: subNode.items
+                    ? subNode.items.map((subSubNode) => ({
+                        ...subSubNode,
+                        text: t(subSubNode.text.toLowerCase())
+                      }))
+                    : undefined
+                }))
+              : undefined
+          })),
+          {
+            select: select,
+            check: check,
+            expand: expand
+          }
+        )}
         expandIcons={true}
         disableField="hidden"
         onExpandChange={onExpandChange}

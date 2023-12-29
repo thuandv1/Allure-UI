@@ -1,0 +1,13 @@
+{
+  "title": "Avatar",
+  "desc": "Un composant Avatar représente un utilisateur, un objet ou une entité.",
+  "use_desc": "Affiche une liste de personnages. Chaque cercle représente une personne et contient son image ou ses initiales. Souvent, ce contrôle est utilisé lors du partage qui a accès à une vue ou un fichier spécifique, ou lorsqu'il attribue à quelqu'un une tâche dans un workflow.",
+  "not_use": "Ne l'utilisez pas lorsque:",
+  "not_1": "L'utilisateur ou le groupe n'est pas les informations principales que vous souhaitez afficher dans une table ou une liste.",
+  "not_2": "Il n'y a pas assez d'espace pour l'afficher.",
+  "basic_desc": "Peut mettre une composition des initiales de la personne sur une couleur d'arrière-plan lorsqu'il n'y a pas d'image de personne, ou aucune image nécessaire.",
+  "image": "Image",
+  "image_desc": "Utilisez ce style vif lorsqu'une image peut s'afficher.",
+  "square": "Carré",
+  "quare_desc": "Utiliser uniquement pour l'utilisateur de connexion à droite dans la zone d'en-tête."
+}

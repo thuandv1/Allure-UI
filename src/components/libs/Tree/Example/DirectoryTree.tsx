@@ -1,5 +1,4 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
 
 import {
   TreeView,
@@ -11,9 +10,9 @@ import {
   ItemRenderProps,
   Stack,
   IconButton,
-  DefaultButton,
   IContextualMenuProps
 } from "@gui/fluent-ui-allure";
+import { useTranslation } from "react-i18next";
 
 interface TreeViewDataItem {
   text: string;
@@ -27,16 +26,16 @@ const tree: TreeViewDataItem[] = [
   {
     text: "Furniture",
     items: [
-      { text: "Tables & Chairs" },
+      { text: "tables_chairs" },
       { text: "Sofas" },
-      { text: "Occasional Furniture" }
+      { text: "occasional_furniture" }
     ]
   },
   {
     text: "Decor",
     items: [
-      { text: "Bed Linen" },
-      { text: "Curtains & Blinds" },
+      { text: "bed_linen" },
+      { text: "curtains_blinds" },
       { text: "Carpets" }
     ]
   }
@@ -46,18 +45,20 @@ const menuProps: IContextualMenuProps = {
   items: [
     {
       key: "emailMessage",
-      text: "Email message",
+      text: "email_message",
       iconProps: { iconName: "Mail" }
     },
     {
       key: "calendarEvent",
-      text: "Calendar event",
+      text: "calendar_event",
       iconProps: { iconName: "Calendar" }
     }
   ]
 };
 
 const TreeItem = (props: ItemRenderProps) => {
+  const [t] = useTranslation("tree");
+
   const item = props.item as TreeViewDataItem;
 
   /*
@@ -84,13 +85,21 @@ const TreeItem = (props: ItemRenderProps) => {
         bordered
         iconProps={{ iconName: "fas-ellipsis", style: { fontSize: 20 } }}
         menuIconProps={{ style: { display: "none" } }}
-        menuProps={menuProps}
+        menuProps={{
+          ...menuProps,
+          items: menuProps.items.map((item) => ({
+            ...item,
+            text: t(`${item.text}`)
+          }))
+        }}
       />
     </Stack>
   );
 };
 
 export const SampleDirectory = () => {
+  const [t] = useTranslation("tree");
+
   const [check, setCheck] = React.useState({
     applyCheckIndeterminate: true,
     ids: [],
@@ -124,11 +133,29 @@ export const SampleDirectory = () => {
       <TreeView
         item={TreeItem}
         directoryTree={true}
-        data={processTreeViewItems(tree, {
-          select: select,
-          check: check,
-          expand: expand
-        })}
+        data={processTreeViewItems(
+          tree.map((node) => ({
+            ...node,
+            text: t(node.text.toLowerCase()),
+            items: node.items
+              ? node.items.map((subNode) => ({
+                  ...subNode,
+                  text: t(subNode.text.toLowerCase()),
+                  items: subNode.items
+                    ? subNode.items.map((subSubNode) => ({
+                        ...subSubNode,
+                        text: t(subSubNode.text.toLowerCase())
+                      }))
+                    : undefined
+                }))
+              : undefined
+          })),
+          {
+            select: select,
+            check: check,
+            expand: expand
+          }
+        )}
         expandIcons={true}
         onExpandChange={onExpandChange}
         aria-multiselectable={true}

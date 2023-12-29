@@ -1,0 +1,21 @@
+{
+  "title": "Miette de pain",
+  "desc": "Il s'affiche par la hiérarchie de page et permet à l'utilisateur de savoir où ils se trouvent. Mieux vaut avoir cette navigation sur le pain à l'exception de la page d'accueil.",
+  "dont_use": "N'utilisez pas quand:",
+  "dont_1": "Le produit n'a pas de hiérarchie logique",
+  "dont_2": "Il y a trop d'options de navigation qui sont très proches les unes des autres.",
+  "dont_3": "La chapelure ne peut pas remplacer la navigation primaire.",
+  "usage_desc": "Lorsqu'il n'y a qu'un seul pain de niveau, il n'est pas cliquable. Mais la couleur du texte est noire.",
+  "home": "Maison",
+  "usage_desc_1": "Certains liens peuvent ne pas être cliquables.",
+  "non_click": "(non cliquable)",
+  "sub": "Sous",
+  "detail": "Détail",
+  "application": "Application",
+  "management": "gestion",
+  "usage_desc_2": "Exemple pour les nœuds multi-parents. C'est un style commun.",
+  "usage_desc_3": "Show ... au milieu de la chapelure quand il y a tellement de nœuds qui ne peuvent pas tout montrer en même temps. Gardez toujours le premier niveau et le dernier niveau visible.",
+  "usage_desc_4": "Show ... au début de la chapelure quand il y a tellement de nœuds qui ne peuvent pas tout montrer en même temps. Gardez toujours le dernier niveau visible.",
+  "second": "Deuxième niveau",
+  "third": "Troisième niveau"
+}

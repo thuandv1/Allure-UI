@@ -1,33 +1,36 @@
 import SectionContent from "components/SectionContent";
 import Content from "components/base/Content";
-import { heading, desc, usage, whenToUse } from "data/avatar";
+import { usage } from "data/avatar";
 import { SampleBasic } from "./Example/BasicAvatar";
 import { SampleImage } from "./Example/ImageAvatar";
 import { SampleSquare } from "./Example/SquareAvatar";
+import { useTranslation } from "react-i18next";
 
 function Avatar() {
+  const [t] = useTranslation(["avatar", "common"]);
+
   return (
-    <Content title={heading} desc={desc}>
+    <Content title={t("title")} desc={t("desc")}>
       <SectionContent
-        title={whenToUse.title}
-        desc={whenToUse.desc}
-        uses={whenToUse.uses}
-      />
+        title={t("common:when_to_use")}
+        desc={`${t("use_desc")} \n \n ${t("not_use")}`}
+        uses={[t("not_1"), t("not_2")]}
+      ></SectionContent>
       <SectionContent
-        title={usage.basic.title}
-        desc={usage.basic.desc}
+        title={t("common:basic_usage")}
+        desc={t("basic_desc")}
         extraCode={usage.basic.code}
         component={<SampleBasic />}
       />
       <SectionContent
-        title={usage.image.title}
-        desc={usage.image.desc}
+        title={t("image")}
+        desc={t("image_desc")}
         extraCode={usage.image.code}
         component={<SampleImage />}
       />
       <SectionContent
-        title={usage.square.title}
-        desc={usage.square.desc}
+        title={t("square")}
+        desc={t("quare_desc")}
         extraCode={usage.square.code}
         component={<SampleSquare />}
       />

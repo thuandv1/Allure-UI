@@ -1,0 +1,9 @@
+{
+  "title": "Tab {{index}}",
+  "desc": "Tabs keeps related content in a single container that is shown and hidden through navigation.",
+  "usage_desc": "Do not display too many tabs at a time, user cannot remember more than 7-9 names. Collapse the rest of the tabs into \"...\" more action.",
+  "card": "Card Style",
+  "card_desc": "Tabs are styled as cards. Choose a card-style tab according to your page layout.",
+  "vertical": "Vertical Tabs",
+  "vertical_desc": "Vertical tabs are the tabs arranged on the left in a vertical space, instead of on the top in a horizontal space."
+}

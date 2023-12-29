@@ -1,28 +1,34 @@
 import { AutoComplete } from "@gui/fluent-ui-allure";
 import SectionContent from "components/SectionContent";
 import Content from "components/base/Content";
-import { desc, heading, usage, whenToUse } from "data/autoComplete";
+import { usage } from "data/autoComplete";
+import { useTranslation } from "react-i18next";
 
 function AutoCompleteContent() {
+  const [t] = useTranslation(["auto_complete", "common"]);
+
   return (
-    <Content title={heading} desc={desc}>
-      <SectionContent title={whenToUse.title} uses={whenToUse.uses} />
+    <Content title={t("title")} desc={t("desc")}>
       <SectionContent
-        title={usage.basic.title}
-        desc={usage.basic.desc}
+        title={t("common:when_to_use")}
+        uses={[t("use_1"), t("use_2"), t("use_3")]}
+      />
+      <SectionContent
+        title={t("common:basic_usage")}
+        desc={t("basic_desc")}
         component={
           <div style={{ width: 280 }}>
-            <AutoComplete placeholder="Input" />
+            <AutoComplete placeholder={t("common:input")} />
           </div>
         }
         extraCode={usage.basic.code}
       />
       <SectionContent
-        title={usage.search.title}
-        desc={usage.search.desc}
+        title={t("search")}
+        desc={t("search_desc")}
         component={
           <div style={{ width: 280 }}>
-            <AutoComplete placeholder="Input" showIcon />
+            <AutoComplete placeholder={t("common:input")} showIcon />
           </div>
         }
         extraCode={usage.basic.code}

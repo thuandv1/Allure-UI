@@ -1,7 +1,3 @@
-const heading = "Icon Gallery";
-const desc =
-  "This is a preview list of all three kinds of font icons. Allure font is customized by AvePoint, Font awesome is quoted from the Font Awesome library, and another Office UI fabric Icons are Microsoft font library.";
-
 const tabs = ["Allure Font", "Font Awesome", "Office UI Fabric Icons"];
 
 const allureIcon = [
@@ -3951,4 +3947,4 @@ const officeIcon = [
   "ZoomToFit"
 ];
 
-export { heading, desc, tabs, allureIcon, officeIcon, awesomeIcon };
+export { tabs, allureIcon, officeIcon, awesomeIcon };

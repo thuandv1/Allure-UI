@@ -1,0 +1,18 @@
+{
+  "usage": "使用法",
+  "basic_usage": "基本的な使用法",
+  "install": "インストール",
+  "design_system": "{{name}}設計システム",
+  "when_to_use": "いつ使用するか",
+  "search": "キーワードを入力します",
+  "company_name": "Avepoint",
+  "app_name": "Allure {{text}}",
+  "question_search": "何を探していますか？",
+  "search_docs": "ドキュメントを検索します",
+  "no_results": "結果はありません",
+  "cancel": "キャンセル",
+  "submit": "提出する",
+  "ok": "わかりました",
+  "input": "入力",
+  "loading": "読み込み"
+}

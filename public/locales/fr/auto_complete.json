@@ -1,0 +1,10 @@
+{
+  "title": "Saisie automatique",
+  "desc": "Le champ Date peut être rempli automatiquement ou afficher les utilisateurs une liste d'options qui stockait des informations précédentes, telles que le nom ou l'adresse d'un utilisateur. Lorsqu'un utilisateur entre dans une valeur, le contrôle de sélection peut télécharger automatiquement les résultats correspondants.",
+  "use_1": "Utilisez un champ automatique à complet lorsque l'utilisateur a tendance à utiliser les données qu'il a déjà saisies auparavant.",
+  "use_2": "Rechercher des valeurs correspondantes à partir de la liste",
+  "use_3": "Recherche globale, tout ce qui correspond aux mots clés sera affiché",
+  "basic_desc": "Entrez un mot-clé pour le nom, l'adresse e-mail, le code postal, etc.",
+  "search": "Recherche",
+  "search_desc": "Entrez les mots clés avec une icône de recherche."
+}

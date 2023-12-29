@@ -6,65 +6,47 @@ import {
   DialogFooter
 } from "@gui/fluent-ui-allure";
 import classNames from "classnames/bind";
+import { useTranslation } from "react-i18next";
 
 import styles from "../Dialog.module.scss";
-import { usage } from "data/dialog";
 
 const cx = classNames.bind(styles);
 
 export const DialogSample = () => {
-  const {
-    basic: { layout, header, button }
-  } = usage;
+  const [t] = useTranslation(["dialog", "common"]);
 
   const [isDialogClosed, setDialogClosed] = React.useState(true);
   return (
     <div>
-      <p className={cx("title")}>{layout.title}</p>
-      <p>{layout.desc}</p>
-      <p className={cx("title")}>{header.title}</p>
-      <p>{header.desc}</p>
-      <p className={cx("title")}>{button.title}</p>
-      <p>{button.desc}</p>
+      <p className={cx("title")}>{t("layout")}</p>
+      <p>{t("layout_desc")}</p>
+      <p className={cx("title")}>{t("header")}</p>
+      <p>{t("header_desc")}</p>
+      <p className={cx("title")}>{t("button")}</p>
+      <p>{t("button_desc")}</p>
       <div className={cx("button")}>
         <DefaultButton onClick={() => setDialogClosed(false)}>
-          Open dialog
+          {t("open")}
         </DefaultButton>
       </div>
       <Dialog
         hidden={isDialogClosed}
-        title="Email Confirm"
+        title={t("email_confirm")}
         maxWidth="480px"
         minWidth="480px"
       >
         <div style={{ maxHeight: 100 }}>
-          <p>
-            Do you want to send this message without a subject? If you want to
-            send, please click 'Send', or you can cancel by pressing 'Don't
-            send' or 'Close'.
-          </p>
-          <p>
-            Do you want to send this message without a subject? If you want to
-            send, please click 'Send', or you can cancel by pressing 'Don't
-            send' or 'Close'.
-          </p>
-          <p>
-            Do you want to send this message without a subject? If you want to
-            send, please click 'Send', or you can cancel by pressing 'Don't
-            send' or 'Close'.
-          </p>
-          <p>
-            Do you want to send this message without a subject? If you want to
-            send, please click 'Send', or you can cancel by pressing 'Don't
-            send' or 'Close'.
-          </p>
+          <p>{t("email_text")}</p>
+          <p>{t("email_text")}</p>
+          <p>{t("email_text")}</p>
+          <p>{t("email_text")}</p>
         </div>
         <DialogFooter>
           <DefaultButton onClick={() => setDialogClosed(true)}>
-            Cancel
+            {t("common:cancel")}
           </DefaultButton>
           <PrimaryButton onClick={() => setDialogClosed(true)}>
-            Submit
+            {t("common:submit")}
           </PrimaryButton>
         </DialogFooter>
       </Dialog>

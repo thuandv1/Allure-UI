@@ -1,0 +1,13 @@
+{
+  "title": "Avatar",
+  "desc": "An avatar component represents a user, an object or entity.",
+  "use_desc": "Displays a list of personas. Each circle represents a person and contains their image or initials. Often this control is used when sharing who has access to a specific view or file, or when assigning someone a task within a workflow.",
+  "not_use": "Do not use it when:",
+  "not_1": "User or group is not the primary information you want to display in a table or list.",
+  "not_2": "There is not enough space to display it.",
+  "basic_desc": "Can put a composition of the person’s initials on a background color when there is no person image, or no image needed.",
+  "image": "Image",
+  "image_desc": "Use this vivid style when there is an image can display.",
+  "square": "Square",
+  "quare_desc": "Only use for the right-top login user in the header zone."
+}

@@ -1,20 +1,5 @@
-const heading = "Breadcrumb";
-const desc =
-  "It display by the page hierarchy and allows user to know where they are. Better to have this breadcrumb navigation except for homepage.";
-
-const dontUse = {
-  title: "Don't use when:",
-  uses: [
-    "Product has no logical hierarchy",
-    "There are too many navigation options that are very close together.",
-    "Breadcrumb cannot replace the primary navigation."
-  ]
-};
-
 const usage = {
   basic: {
-    title: "Usage",
-    desc: "When there is only 1 level breadcrumb, it is not clickable. But the text color is black.",
     code: `import * as React from "react";
 import { Breadcrumb, IBreadcrumbItem } from "@gui/fluent-ui-allure";
 
@@ -25,7 +10,6 @@ export const SampleRoot = () => {
 };`
   },
   second: {
-    desc: "Some links may not be clickable.",
     code: `import * as React from "react";
 import { Breadcrumb, IBreadcrumbItem } from "@gui/fluent-ui-allure";
 
@@ -45,7 +29,6 @@ export const SampleBasic = () => {
 };`
   },
   third: {
-    desc: "Example for multi-parent nodes. This is a common style.",
     code: `import * as React from "react";
 import { Breadcrumb, IBreadcrumbItem } from "@gui/fluent-ui-allure";
 
@@ -65,7 +48,6 @@ export const SampleBasic = () => {
 };`
   },
   fourth: {
-    desc: "Show ... in the middle of breadcrumb when there are so many nodes that cannot show all at the same time. Always keep the first level and the last level visible.",
     code: `import * as React from "react";
 import { Breadcrumb, IBreadcrumbItem } from "@gui/fluent-ui-allure";
 
@@ -86,7 +68,6 @@ export const SampleOverflowIndex = () => {
 };`
   },
   fifth: {
-    desc: "Show ... at the beginning of breadcrumb when there are so many nodes that cannot show all at the same time. Always keep the last level visible.",
     code: `import * as React from "react";
 import { Breadcrumb, IBreadcrumbItem } from "@gui/fluent-ui-allure";
 
@@ -108,4 +89,4 @@ export const SampleMaxDisplayedItems = () => {
   }
 };
 
-export { heading, desc, dontUse, usage };
+export { usage };

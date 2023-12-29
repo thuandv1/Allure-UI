@@ -7,24 +7,23 @@ import {
   DashedButton,
   TextButton
 } from "@gui/fluent-ui-allure";
+import { useTranslation } from "react-i18next";
 
 export const IconButton = () => {
+  const [t] = useTranslation("button");
+
   return (
     <Stack horizontal tokens={{ childrenGap: 16 }}>
       <DefaultButton iconProps={{ iconName: "fas-rotate-right" }}>
-        Outline
+        {t("outline")}
       </DefaultButton>
-
       <PrimaryButton iconProps={{ iconName: "fas-rotate-right" }}>
-        Filled button
+        {t("filled")}
       </PrimaryButton>
-
       <DashedButton iconProps={{ iconName: "fas-plus" }}>
-        Dashed button
+        {t("dashed")}
       </DashedButton>
-
       <IconBtn bordered iconProps={{ iconName: "fas-layer-group" }}></IconBtn>
-
       <TextButton
         style={{ minWidth: 0 }}
         iconProps={{ iconName: "fas-layer-group" }}

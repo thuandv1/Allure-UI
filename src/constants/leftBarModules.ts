@@ -2,7 +2,7 @@ import { ModuleItem } from "types/LeftBar";
 
 const LeftBarModules: ModuleItem[] = [
   {
-    module: "Allure Design System",
+    module: "design_system",
     children: [
       { name: "Introduction" },
       { name: "Design principle" },
@@ -12,10 +12,10 @@ const LeftBarModules: ModuleItem[] = [
         link: "https://xd.adobe.com/view/34543319-c6da-4dd9-be05-fe7b01ae133b-6107/"
       },
       { name: "Change log" }
-  ]
+    ]
   },
   {
-    module: "Basic",
+    module: "basic",
     children: [
       { name: "Button" },
       { name: "Icon Gallery" },
@@ -26,7 +26,7 @@ const LeftBarModules: ModuleItem[] = [
     ]
   },
   {
-    module: "Navigation",
+    module: "navigation",
     children: [
       { name: "Breadcrumb" },
       { name: "Navigation Menu" },
@@ -37,7 +37,7 @@ const LeftBarModules: ModuleItem[] = [
     ]
   },
   {
-    module: "Form",
+    module: "form",
     children: [
       { name: "AutoComplete" },
       { name: "Avatar" },
@@ -54,7 +54,7 @@ const LeftBarModules: ModuleItem[] = [
     ]
   },
   {
-    module: "Data",
+    module: "data",
     children: [
       { name: "Calendar", notVerify: true },
       { name: "Carousel", notVerify: true },
@@ -65,11 +65,11 @@ const LeftBarModules: ModuleItem[] = [
     ]
   },
   {
-    module: "Feedback",
+    module: "feedback",
     children: [{ name: "Message" }, { name: "Notification" }]
   },
   {
-    module: "Others",
+    module: "others",
     children: [
       { name: "Dialog" },
       { name: "Modal" },

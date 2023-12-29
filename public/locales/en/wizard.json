@@ -1,0 +1,22 @@
+{
+  "title": "Wizard",
+  "desc": "Wizard is a progress indicator that communicates to the user the progress of a particular process.",
+  "use_desc": "Use a wizard when a user needs to fill or operate a lot of content, especially when this content has hierarchy relationships.",
+  "horizontal": "Horizontal Wizard",
+  "horizontal_desc": "Horizontal wizards are ideal when the contents of one step depend on an earlier step. Avoid using long step names in horizontal wizards.",
+  "general": "General",
+  "template": "Template",
+  "authentication": "Authentication",
+  "optional": "Optional",
+  "review": "Review",
+  "content": "Content",
+  "next": "Next",
+  "vertical": "Vertical",
+  "vertical_desc": "The vertical wizard offers room for growth. It can be extended if one step contains sub-steps, or the number of steps increases.",
+  "progress": "Your progress",
+  "general_detail": "When the step is active, we can show a short description here on what this step entails.",
+  "security": "Security Settings",
+  "summary": "Summary",
+  "finish": "Finish",
+  "back": "Back"
+}

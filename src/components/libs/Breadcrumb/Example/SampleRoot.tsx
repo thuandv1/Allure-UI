@@ -1,8 +1,11 @@
 import * as React from "react";
 import { Breadcrumb, IBreadcrumbItem } from "@gui/fluent-ui-allure";
+import { useTranslation } from "react-i18next";
 
 export const SampleRoot = () => {
-  const items: IBreadcrumbItem[] = [{ text: "Home", key: "Home" }];
+  const [t] = useTranslation("breadcrumb");
+
+  const items: IBreadcrumbItem[] = [{ text: t("home"), key: "Home" }];
 
   return (
     <Breadcrumb

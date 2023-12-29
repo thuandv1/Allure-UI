@@ -1,21 +1,5 @@
-const heading = "AutoComplete";
-
-const desc =
-  "The date field can be automatically filled or show users an option list that stored previous information, such as a user's name or address. When a user enters a value, the selection control can auto-load the matched results.";
-
-const whenToUse = {
-  title: "When to use",
-  uses: [
-    "Use auto-complete field when the user tends to use the data that he/she already entered before.",
-    "Search for matched values from list",
-    "Global search, anything that matched the keywords will be displayed"
-  ]
-};
-
 const usage = {
   basic: {
-    title: "Basic Usage",
-    desc: "Enter a keyword for name, email address, postal code, and so on.",
     code: `import * as React from "react";
 import { Stack, AutoComplete, IAutoCompleteStyles, AutoCompleteOptions } from "@gui/fluent-ui-allure";
 
@@ -56,8 +40,6 @@ export const SampleBasic = () => {
 };`
   },
   search: {
-    title: "Search",
-    desc: "Enter keywords with a search icon.",
     code: `import * as React from "react";
 import { Stack, AutoComplete, IAutoCompleteStyles, AutoCompleteOptions } from "@gui/fluent-ui-allure";
 
@@ -112,4 +94,4 @@ export const SampleSearch = () => {
   }
 };
 
-export { heading, desc, whenToUse, usage };
+export { usage };

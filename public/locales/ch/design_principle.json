@@ -1,0 +1,17 @@
+{
+  "title": "设计原理",
+  "useful": "有用",
+  "usable": "可用",
+  "efficiency": "效率",
+  "consistency": "一致性",
+  "accessible": "无障碍",
+  "collaborative": "协作",
+  "responsive": "响应迅速",
+  "useful_desc": "我们用户的内容总是首先出现的 - 确保我们集中了用户的业务目标，并始终是任务驱动的。",
+  "usable_desc": "所有用户都可以毫无困难地使用它。内容需要清晰易于找到。功能需要轻松访问和高效。",
+  "efficiency_desc": "我们选择仅在需要时显示UI元素，而不是始终使其可用。",
+  "consistency_desc": "通过将相同的解决方案应用于相同的问题可以降低学习成本，从而建立熟悉度并加强直觉。",
+  "accessible_desc": "所有页面设计都符合颜色对比度，导航替代方案以及基于WCAG 2.0的更多准则，符合可访问性要求。",
+  "collaborative_desc": "我们提供大量的教学活动并实现团队合作。",
+  "responsive_desc": "使用8像素基本单元允许组件在所有显示尺寸上始终如一地扩展。"
+}

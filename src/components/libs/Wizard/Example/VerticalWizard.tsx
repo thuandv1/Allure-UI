@@ -9,10 +9,13 @@ import {
   PrimaryButton
 } from "@gui/fluent-ui-allure";
 import { initialize } from "@gui/common-i18n-terms";
+import { useTranslation } from "react-i18next";
 
 initialize("en");
 
 export const SampleVertical = () => {
+  const [t] = useTranslation("wizard");
+
   const [activeStep, setActiveStep] = React.useState(0);
   function handleNext() {
     setActiveStep((previousStep) => previousStep + 1);
@@ -40,27 +43,22 @@ export const SampleVertical = () => {
           activeStep={activeStep}
           onStepClick={onStepClick}
         >
-          <Step header="General">
+          <Step header={t("general")}>
             <div>
-              <Text style={{ fontSize: 13 }}>
-                When the step is active, we can show a short description here on
-                what this step entails.
-              </Text>
+              <Text style={{ fontSize: 13 }}>{t("general_detail")}</Text>
             </div>
           </Step>
-          <Step header="Security Settings">
+          <Step header={t("security")}>
             <div>
-              <Text style={{ fontSize: 13 }}>Security Settings</Text>
+              <Text style={{ fontSize: 13 }}>{t("security")}</Text>
             </div>
           </Step>
-          <Step header="Summary">
+          <Step header={t("summary")}>
             <div>
-              <Text style={{ fontSize: 13 }}>
-                You have chosen the following settings:
-              </Text>
+              <Text style={{ fontSize: 13 }}>{t("summary")}</Text>
               <ul style={{ fontSize: 13 }}>
-                <li>General</li>
-                <li>Security</li>
+                <li>{t("general")}</li>
+                <li>{t("security")}</li>
               </ul>
             </div>
           </Step>
@@ -68,20 +66,20 @@ export const SampleVertical = () => {
       </div>
       <Stack verticalAlign="space-between" style={{ width: "100%" }}>
         <div style={{ padding: 15, textAlign: "center" }}>
-          {activeStep == 0 && <div>General Content</div>}
-          {activeStep == 1 && <div>Security Settings</div>}
-          {activeStep == 2 && <div>Summary</div>}
-          {activeStep == 3 && <div>Finish</div>}
+          {activeStep == 0 && <div>{`${t("general")} ${t("content")}`}</div>}
+          {activeStep == 1 && <div>{t("security")}</div>}
+          {activeStep == 2 && <div>{t("summary")}</div>}
+          {activeStep == 3 && <div>{t("finish")}</div>}
         </div>
 
         <Stack horizontal tokens={{ childrenGap: 10 }} horizontalAlign="end">
           {activeStep != 0 && (
-            <DefaultButton onClick={handleBack}>Back</DefaultButton>
+            <DefaultButton onClick={handleBack}>{t("back")}</DefaultButton>
           )}
           {activeStep != 3 && (
-            <PrimaryButton onClick={handleNext}>Next</PrimaryButton>
+            <PrimaryButton onClick={handleNext}>{t("next")}</PrimaryButton>
           )}
-          {activeStep == 3 && <PrimaryButton>Finish</PrimaryButton>}
+          {activeStep == 3 && <PrimaryButton>{t("finish")}</PrimaryButton>}
         </Stack>
       </Stack>
     </Stack>

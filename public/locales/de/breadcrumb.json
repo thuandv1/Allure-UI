@@ -1,0 +1,21 @@
+{
+  "title": "Breadcrumb",
+  "desc": "Es wird nach der Seitenhierarchie angezeigt und ermöglicht den Benutzer zu wissen, wo sie sich befinden. Besser diese Breadcrumb Navigation mit Ausnahme der Homepage.",
+  "dont_use": "Verwenden Sie nicht, wann:",
+  "dont_1": "Produkt hat keine logische Hierarchie",
+  "dont_2": "Es gibt zu viele Navigationsoptionen, die sehr eng beieinander liegen.",
+  "dont_3": "Breadcrumb kann die primäre Navigation nicht ersetzen.",
+  "usage_desc": "Wenn es nur 1 Level -Brotcrumb gibt, ist es nicht anklickbar. Aber die Textfarbe ist schwarz.",
+  "home": "Heim",
+  "usage_desc_1": "Einige Links sind möglicherweise nicht anklickbar.",
+  "non_click": "(nicht klickbar)",
+  "sub": "Sub",
+  "detail": "Detail",
+  "application": "Anwendung",
+  "management": "Management",
+  "usage_desc_2": "Beispiel für Multi-Tier-Knoten. Dies ist ein gemeinsamer Stil.",
+  "usage_desc_3": "Zeigen Sie ... mitten im Breadcrumb, wenn es so viele Knoten gibt, die nicht alle gleichzeitig zeigen können. Halten Sie immer das erste Level und das letzte Level sichtbar.",
+  "usage_desc_4": "Zeigen Sie ... zu Beginn von Breadcrumb, wenn es so viele Knoten gibt, die nicht alle gleichzeitig zeigen können. Halten Sie immer das letzte Level sichtbar.",
+  "second": "Zweites Level",
+  "third": "Drittes Level"
+}

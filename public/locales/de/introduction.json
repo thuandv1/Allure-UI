@@ -1,0 +1,11 @@
+{
+  "design_desc": "Dieses Designsystem {{app}} enthält sowohl Stil- als auch Interaktionsrichtlinien, die auf die Online -Produkte von {{company}} angewendet werden können. Es kann uns helfen, eine Konsistenz -Benutzererfahrung für {{company}} -Kunden aufzubauen.",
+  "wcag_title": "WCAG2.0 unterstützt",
+  "wcag_desc": "Die Richtlinien für Webinhalte Accessibility (WCAG) 2.0 deckt eine breite Palette von Empfehlungen ab, um Webinhalte zugänglicher zu machen. Das Befolgen dieser Richtlinien wird den Inhalten für eine breitere Palette von Menschen mit Behinderungen zugänglich machen, darunter Blindheit und geringes Sehen, Taubheit und Hörverlust, Lernschwierigkeiten, kognitive Einschränkungen, begrenzte Bewegung, Sprachbehinderungen, Photosensitivität und Kombinationen dieser. Das Befolgen dieser Richtlinien macht Ihren Webinhalt auch häufig für Benutzer im Allgemeinen mehr verwendbar.",
+  "wcag_overview": "WCAG 2 Übersicht",
+  "environment": "Umweltunterstützung",
+  "last_version": "Neueste {{number}} Versionen",
+  "setup": "Da die Allure UI auf dem Feed _ von Proget gehostet wird, sollten Sie eine .npmrc -Datei unter dem Stammordner Ihres UI -Projekts erstellen.",
+  "install": "Installieren Sie dann das {{name}} UI -Paket:",
+  "usage": "Importieren Sie in der Root -Datei Ihrer React -App {{name}} ui und setzen Sie das entsprechende Thema und die entsprechende Sprache."
+}

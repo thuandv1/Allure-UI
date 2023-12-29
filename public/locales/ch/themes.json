@@ -1,0 +1,12 @@
+{
+  "cobalt": "钴",
+  "teal": "蓝绿色",
+  "ochre": "赭石",
+  "violet": "紫色",
+  "magenta": "品红",
+  "lavender": "薰衣草",
+  "pewter": "锡",
+  "mint": "薄荷",
+  "custom": "自定义主题颜色",
+  "theme": "主题：{{theme}}"
+}

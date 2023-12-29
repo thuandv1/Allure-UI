@@ -1,11 +1,5 @@
-const heading = "Tab";
-const desc =
-  "Tabs keeps related content in a single container that is shown and hidden through navigation.";
-
 const usage = {
   basic: {
-    title: "Usage",
-    desc: 'Do not display too many tabs at a time, user cannot remember more than 7-9 names. Collapse the rest of the tabs into "..." more action.',
     code: `import * as React from 'react';
 import { IStyleSet, Label, ILabelStyles } from '@fluentui/react';
 import { Pivot, PivotItem } from '@gui/fluent-ui-allure';
@@ -46,8 +40,6 @@ export const TabBasicView: React.FunctionComponent = () => {
 };`
   },
   card: {
-    title: "Card Style",
-    desc: "Tabs are styled as cards. Choose a card-style tab according to your page layout.",
     code: `import * as React from "react";
 import { Label } from "@fluentui/react";
 import { Pivot, PivotItem } from "@gui/fluent-ui-allure";
@@ -78,8 +70,6 @@ export const TabCordView: React.FunctionComponent = () => {
 };`
   },
   vertical: {
-    title: "Vertical Tabs",
-    desc: "Vertical tabs are the tabs arranged on the left in a vertical space, instead of on the top in a horizontal space.",
     code: `import * as React from 'react';
 import { IPivotProps, Label, List, useTheme } from '@fluentui/react';
 import { DefaultButton, IExtendedPalette, PivotItem } from '@gui/fluent-ui-allure';
@@ -177,4 +167,4 @@ const VerticalTab = (props: IPivotProps) => {
   }
 };
 
-export { heading, desc, usage };
+export { usage };

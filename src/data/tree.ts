@@ -1,10 +1,5 @@
-const heading = "Tree";
-const desc =
-  "Which can be used in a complex hierarchy to emphasize the whole structure.";
-
 const usage = {
   basic: {
-    title: "Basic Usage",
     code: `import * as React from "react";
 
 import { TreeView, TreeViewExpandChangeEvent, TreeViewItemClickEvent, processTreeViewItems } from "@gui/fluent-ui-allure";
@@ -98,8 +93,6 @@ export const SampleBasic = () => {
 };`
   },
   custom: {
-    title: "Custom Icon",
-    desc: "Tabs are styled as cards. Choose a card-style tab according to your page layout.",
     code: `import * as React from "react";
 
 import { TreeView, TreeViewExpandChangeEvent, ItemRenderProps, TreeViewItemClickEvent, processTreeViewItems, Icon } from "@gui/fluent-ui-allure";
@@ -938,4 +931,4 @@ export const SampleLoading = () => {
   }
 };
 
-export { heading, desc, usage };
+export { usage };

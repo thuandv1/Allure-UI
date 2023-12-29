@@ -1,16 +1,3 @@
-const heading = "Button";
-const desc = "Use Button to perform a specific action.";
-
-const whenToUse = {
-  title: "When to use",
-  desc: "Use Primary buttons in situations where uers may need to:",
-  uses: [
-    "Use auto-complete field when the user tends to use the data that he/she already entered before.",
-    "Search for matched values from list",
-    "Global search, anything that matched the keywords will be displayed"
-  ]
-};
-
 const usage = {
   basic: {
     title: "Basic Usage",
@@ -221,4 +208,4 @@ export const SampleLoading = () => {
   }
 };
 
-export { heading, desc, whenToUse, usage };
+export { usage };

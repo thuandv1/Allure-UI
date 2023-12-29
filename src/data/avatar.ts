@@ -1,19 +1,5 @@
-const heading = "Avatar";
-const desc = "An avatar component represents a user, an object or entity.";
-
-const whenToUse = {
-  title: "When to use",
-  desc: "Displays a list of personas. Each circle represents a person and contains their image or initials. Often this control is used when sharing who has access to a specific view or file, or when assigning someone a task within a workflow.",
-  uses: [
-    "User or group is not the primary information you want to display in a table or list.",
-    "There is not enough space to display it."
-  ]
-};
-
 const usage = {
   basic: {
-    title: "Basic Usage",
-    desc: "Can put a composition of the person’s initials on a background color when there is no person image, or no image needed.",
     code: `import * as React from 'react';
 import { Persona, Stack, PersonaSize } from '@gui/fluent-ui-allure';
 
@@ -63,4 +49,4 @@ export const SampleSquare = () => {
   }
 };
 
-export { heading, desc, whenToUse, usage };
+export { usage };

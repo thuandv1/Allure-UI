@@ -1,0 +1,18 @@
+{
+  "usage": "Usage",
+  "basic_usage": "Basic Usage",
+  "install": "Installation",
+  "design_system": "{{name}} Design System",
+  "when_to_use": "When to use",
+  "search": "Type search keyword",
+  "company_name": "Avepoint",
+  "app_name": "Allure {{text}}",
+  "question_search": "What are you looking for?",
+  "search_docs": "Search docs",
+  "no_results": "No results for",
+  "cancel": "Cancel",
+  "submit": "Submit",
+  "ok": "OK",
+  "input": "Input",
+  "loading": "Loading"
+}

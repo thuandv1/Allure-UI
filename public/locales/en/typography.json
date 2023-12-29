@@ -1,0 +1,20 @@
+{
+  "title": "Typography",
+  "desc": "This is a component for displaying text. You can use this to standardize text across your system.",
+  "spacing": "Letter Spacing",
+  "font": "Font Convention",
+  "page_header": "Page Header Title",
+  "large_header": "Heading large bold",
+  "medium_header": "Heading medium bold",
+  "bold_header": "Bold heading",
+  "semi_header": "Semibold Heading",
+  "default": "Default body",
+  "secondary": "Secondary text",
+  "breadcrumb": "Breadcrumb",
+  "calendar": "Calendar Month/Year",
+  "panel": "Panel and popup title",
+  "section": "Section title, table primary column value",
+  "label": "Label title, table column name, action",
+  "body": "Body",
+  "watermark": "Description, watermark"
+}

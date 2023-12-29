@@ -2,6 +2,7 @@ import { Icon } from "@gui/fluent-ui-allure";
 import classNames from "classnames/bind";
 
 import styles from "./NotFound.module.scss";
+import { useTranslation } from "react-i18next";
 
 const cx = classNames.bind(styles);
 
@@ -11,12 +12,14 @@ interface Props {
 
 function NotFound(props: Props) {
   const { keyword } = props;
+  const [t] = useTranslation("common");
 
   return (
     <div className={cx("no-result")}>
       <Icon iconName="SearchIssue" />
       <p>
-        No results for <b>"{keyword}"</b>
+        {t("no_results")}&nbsp;
+        <b>"{keyword}"</b>
       </p>
     </div>
   );

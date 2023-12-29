@@ -1,0 +1,17 @@
+{
+  "title": "Principe de conception",
+  "useful": "Utile",
+  "usable": "Utilisable",
+  "efficiency": "Efficacité",
+  "consistency": "Cohérence",
+  "accessible": "Accessible",
+  "collaborative": "Collaboratif",
+  "responsive": "Sensible",
+  "useful_desc": "Le contenu de nos utilisateurs vient toujours en premier - assurez-vous que nous concentrons les objectifs commerciaux de l'utilisateur et que nous soyons toujours axés sur les tâches.",
+  "usable_desc": "Tous les utilisateurs peuvent l'utiliser sans difficultés. Le contenu doit être clair et facile à trouver. Les fonctions doivent être facilement accessibles et efficaces.",
+  "efficiency_desc": "Nous choisissons d'afficher des éléments d'interface utilisateur uniquement lorsqu'ils sont nécessaires, plutôt que de les rendre disponibles à tout moment.",
+  "consistency_desc": "Créez la familiarité et renforcez l'intuition en appliquant la même solution aux mêmes questions qui peuvent réduire le coût d'apprentissage.",
+  "accessible_desc": "Toutes les conceptions de pages répondent aux conditions d'accessibilité en termes de contraste des couleurs, d'alternatives de navigation et de directives supplémentaires basées sur WCAG 2.0.",
+  "collaborative_desc": "Nous fournissons une multitude d'activités d'enseignement et permettons le travail d'équipe.",
+  "responsive_desc": "L'utilisation d'une unité de base de 8 pixels permet aux composants de s'étendre de manière cohérente sur toutes les tailles d'affichage."
+}
