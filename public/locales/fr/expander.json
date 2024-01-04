@@ -1,0 +1,11 @@
+{
+  "title": "Extenseur",
+  "desc": "Permettez à l'utilisateur de basculer afficher une section de contenu qui peut optimiser l'utilisation de l'espace vertical.",
+  "basic_desc": "L'expanseur a généralement un titre et une flèche. Cliquez sur la ligne entière de la flèche pour se développer / s'effondrer.",
+  "about": "À propos",
+  "about_desc": "Sous le ciel azur, une rivière tranquille serpente à travers des prairies vertes luxuriantes. Une symphonie de la nature se déroule, avec des fleurs vibrantes dansant dans la douce brise, créant une scène pittoresque de sérénité et de beauté.",
+  "child": "Titre de l'enfant",
+  "expand": "Développez l'icône à gauche",
+  "expand_desc": "L'expanseur a généralement un titre, une flèche et d'autres paramètres configurables. Cliquez sur la flèche pour se développer / s'effondrer.",
+  "more": "Plus de rembourrage"
+}

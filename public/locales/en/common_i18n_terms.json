@@ -1,0 +1,7 @@
+{
+  "title": "Common I18N Terms",
+  "desc": "{{app}} depends on @gui/common-i18n-terms which is a package including some common terms that can be used in your projects.",
+  "choose": "Choose an items",
+  "key": "Key",
+  "value": "Value"
+}

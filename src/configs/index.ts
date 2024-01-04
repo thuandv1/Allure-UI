@@ -42,7 +42,8 @@ const routes = {
   Progress: "progress",
   Waffle: "waffle",
   ActivityTimeline: "activity-timeline",
-  AutoComplete: "autocomplete"
+  AutoComplete: "autocomplete",
+  DemoPage: "demo-page"
 };
 
 export { routes };

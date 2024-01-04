@@ -1,0 +1,12 @@
+{
+  "title": "DatePicker",
+  "desc": "Date picker is used to select a date or a range of dates.",
+  "basic_desc": "A user can choose a specific date using a date picker by clicking the calendar icon or just input by themselves.",
+  "date_range": "Date range (Recommended)",
+  "rec_desc": "A date range allows user to choose a start date from one calendar and then choose an end date from another calendar.",
+  "rec": "(Recommended)",
+  "required": "DatePicker with required field",
+  "required_desc": "Validation will happen when the Date Picker loses focus.",
+  "ranger_desc": "A date range allows the user to choose a date range from two calendars. It lets the user select the same day; the range time will be 00:00 - 23:59.",
+  "error": "This field is required."
+}

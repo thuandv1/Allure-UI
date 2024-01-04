@@ -8,5 +8,7 @@
   "pewter": "Pewter",
   "mint": "Mint",
   "custom": "Custom theme color",
-  "theme": "Theme: {{theme}}"
+  "theme": "Theme: {{theme}}",
+  "upload": "Upload",
+  "download": "Download"
 }

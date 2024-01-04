@@ -1,0 +1,11 @@
+{
+  "title": "Cocher",
+  "desc": "CheckBox est utilisé pour sélectionner un ou plusieurs éléments dans un ensemble.",
+  "basic_1": "Utilisez une seule case lorsque vous devez vous mettre d'accord sur certaines conditions ou termes. Tels que: ne montrez pas à nouveau, je suis d'accord sur les termes ...",
+  "basic_2": "Utilisez des cases à cocher lorsque l'utilisateur peut sélectionner plusieurs éléments, tels que: sélectionnez des éléments dans une table.",
+  "disabled": "Désactivé",
+  "checkbox": "Cocher",
+  "check_all": "Vérifie tout",
+  "select_all": "Tout sélectionner",
+  "option": "Option {{index}}"
+}

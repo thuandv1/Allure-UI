@@ -8,5 +8,7 @@
   "pewter": "Zinn",
   "mint": "Minze",
   "custom": "Benutzerdefinierte Themenfarbe",
-  "theme": "Thema: {{theme}}"
+  "theme": "Thema: {{theme}}",
+  "upload": "Hochladen",
+  "download": "Herunterladen"
 }

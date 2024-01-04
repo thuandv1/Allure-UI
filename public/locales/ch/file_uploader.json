@@ -1,0 +1,19 @@
+{
+  "title": "文件上传器",
+  "desc": "允许用户从本地位置上传文件。",
+  "browser": "单文件浏览器",
+  "browser_desc": "此控件允许用户仅浏览一个文件。",
+  "file": "证书文件",
+  "browse": "浏览",
+  "uploader": "单文件上传器",
+  "uploader_desc": "此控件允许用户仅上传一个文件。",
+  "uploader_more": "浏览您要还原字段的记录的CSV/ZIP文件",
+  "download": "下载CSV模板",
+  "upload": "上传",
+  "multiple": "多个文件上传器",
+  "multiple_desc": "此控件应支持拖放，以易于使用。最好让用户知道可以提前上传哪些类型。TC",
+  "drag_drop": "在这里拖动文件，或浏览",
+  "logo": "上传徽标",
+  "up_to": "最多10 Mb（.doc，.docx，.js，.cs，.css）",
+  "avatar": "上传化身"
+}

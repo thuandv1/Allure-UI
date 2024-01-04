@@ -15,7 +15,7 @@ function DesignPrincipleContent() {
     <Content title={t("title")}>
       <ul className={cx("principles")}>
         {principles.map((principle) => (
-          <li>
+          <li key={principle.icon}>
             <Icon iconName={principle.icon} />
             <div className={cx("info")}>
               <h6>{t(principle.title.toLowerCase())}</h6>

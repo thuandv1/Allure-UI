@@ -8,5 +8,7 @@
   "pewter": "锡",
   "mint": "薄荷",
   "custom": "自定义主题颜色",
-  "theme": "主题：{{theme}}"
+  "theme": "主题：{{theme}}",
+  "upload": "上传",
+  "download": "下载"
 }

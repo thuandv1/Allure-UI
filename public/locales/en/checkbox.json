@@ -1,0 +1,11 @@
+{
+  "title": "Checkbox",
+  "desc": "Checkbox is used to select one or more items from a set.",
+  "basic_1": "Use only one checkbox when you need to agree on some conditions or terms. Such as: Do not show again, I agree on terms...",
+  "basic_2": "Use checkboxes when the user can select multiple items, such as: select items from a table.",
+  "disabled": "Disabled",
+  "checkbox": "Check box",
+  "check_all": "Check all",
+  "select_all": "Select All",
+  "option": "Option {{index}}"
+}

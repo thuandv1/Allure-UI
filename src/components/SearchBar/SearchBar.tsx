@@ -68,6 +68,7 @@ const SearchBar = (props: ISearchBarProps) => {
   return (
     <Stack>
       <SearchBox
+        onSearch={() => false}
         onClick={handleOpenModal}
         styles={styles}
         placeholder={placeholder}

@@ -1,0 +1,12 @@
+{
+  "title": "Datumsauswahl",
+  "desc": "Der Date Picker wird verwendet, um ein Datum oder einen Datenbereich auszuwählen.",
+  "basic_desc": "Ein Benutzer kann ein bestimmtes Datum mit einem Datumspicker auswählen, indem er auf das Kalendersymbol klickt oder einfach selbst eingibt.",
+  "date_range": "Datumsbereich (empfohlen)",
+  "rec_desc": "Mit einem Datumsbereich kann der Benutzer ein Startdatum aus einem Kalender aus auswählen und dann ein Enddatum aus einem anderen Kalender auswählen.",
+  "rec": "(Empfohlen)",
+  "required": "DatePicker mit dem erforderlichen Feld",
+  "required_desc": "Die Validierung erfolgt, wenn der Datumspicker den Fokus verliert.",
+  "ranger_desc": "Mit einem Datumsbereich kann der Benutzer einen Datumsbereich aus zwei Kalendern auswählen. Der Benutzer ermöglicht es am selben Tag. Die Reichweite ist 00:00 - 23:59.",
+  "error": "Dieses Feld ist erforderlich."
+}

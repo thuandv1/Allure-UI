@@ -1,0 +1,11 @@
+{
+  "title": "Expander",
+  "desc": "Allow the user to toggle display a section of content which can optimize the use of vertical space.",
+  "basic_desc": "Expander usually have a title and arrow in it. Click the arrow whole row to expand/collapse.",
+  "about": "About",
+  "about_desc": "Underneath the azure sky, a tranquil river meanders through lush green meadows. A symphony of nature unfolds, with vibrant flowers dancing in the gentle breeze, creating a picturesque scene of serenity and beauty.",
+  "child": "Child title",
+  "expand": "Expand icon in the left",
+  "expand_desc": "Expander usually have a title, arrow and other configurable settings in it. Click the arrow to expand/collapse.",
+  "more": "More padding"
+}

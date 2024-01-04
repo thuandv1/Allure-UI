@@ -26,7 +26,13 @@ function Router() {
               key={path}
               path={path}
               element={
-                <Suspense fallback={<Loading>{t("loading")}</Loading>}>
+                <Suspense
+                  fallback={
+                    <div className="center">
+                      <Loading>{t("loading")}</Loading>
+                    </div>
+                  }
+                >
                   <Page />
                 </Suspense>
               }

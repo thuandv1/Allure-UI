@@ -1,0 +1,11 @@
+{
+  "title": "Kontrollkästchen",
+  "desc": "Das Kontrollkästchen wird verwendet, um ein oder mehrere Elemente aus einem Satz auszuwählen.",
+  "basic_1": "Verwenden Sie nur ein Kontrollkästchen, wenn Sie sich auf einige Bedingungen oder Bedingungen einigen müssen. Zum Beispiel: Zeigen Sie nicht noch einmal, ich stimme zu den Bedingungen ...",
+  "basic_2": "Verwenden Sie Kontrollkästchen, wenn der Benutzer mehrere Elemente auswählen kann, z. B.: Elemente aus einer Tabelle auswählen.",
+  "disabled": "Deaktiviert",
+  "checkbox": "Kontrollkästchen",
+  "check_all": "Alle überprüfen",
+  "select_all": "Wählen Sie Alle",
+  "option": "Option {{index}}"
+}

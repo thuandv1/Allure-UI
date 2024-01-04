@@ -1,48 +1,100 @@
 import { useMemo } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
 import { useTranslation } from "react-i18next";
-import { Dropdown, IDropdownOption, Themes } from "@gui/fluent-ui-allure";
+import {
+  Dropdown,
+  IDropdownOption,
+  Stack,
+  Themes
+} from "@gui/fluent-ui-allure";
+import { Lang, initialize } from "@gui/common-i18n-terms";
 
 import styles from "./Header.module.scss";
 import { Logo } from "assets/images";
 import SearchBar from "components/SearchBar";
-import { LANGUAGE_KEY, LanguageEnum, THEME_KEY } from "constants/language";
-import { changeTheme } from "_redux/modules/app/slice";
+import { LANGUAGE_KEY, THEME_KEY } from "constants/language";
+import { changeTheme, onThemeDesign } from "_redux/modules/app/slice";
 import { routes } from "configs";
 import { LocalStorage } from "helpers";
+import { selectTheme } from "_redux/modules/app/selector";
+import { THEME_CUSTOM_KEY } from "constants/theme";
 
 const cx = classNames.bind(styles);
 
 function Header() {
   const { t, i18n } = useTranslation(["common", "language", "themes"]);
+  const theme = useSelector(selectTheme);
   const lang = LocalStorage.get(LANGUAGE_KEY);
-  const theme = LocalStorage.get(THEME_KEY);
 
   const dispatch = useDispatch();
 
   const languageOptions: IDropdownOption[] = useMemo(
-    () =>
-      Object.keys(LanguageEnum)
-        .filter((value) => value)
-        .map((value) => ({
-          text: t(`language:${value}`),
-          key: value
-        })),
+    () => [
+      { text: t("language:en"), key: "en" },
+      { text: t("language:jp"), key: "jp" },
+      { text: t("language:ch"), key: "ch" },
+      { text: t("language:de"), key: "de" },
+      { text: t("language:fr"), key: "fr" }
+    ],
     [t]
   );
 
+  initialize(lang as Lang);
+
   const themeOptions: IDropdownOption[] = useMemo(
-    () =>
-      Object.entries(Themes)
-        .filter(([_, value]) => typeof value === "number")
-        .map(([key, value]) => ({
-          text: t("themes:theme", {
-            theme: t(`themes:${key.toLowerCase()}`)
-          }),
-          key: value.toString()
-        })),
+    () => [
+      {
+        key: Themes.Cobalt,
+        text: t("themes:theme", {
+          theme: t("themes:cobalt")
+        })
+      },
+      {
+        key: Themes.Teal,
+        text: t("themes:theme", {
+          theme: t("themes:teal")
+        })
+      },
+      {
+        key: Themes.Ochre,
+        text: t("themes:theme", {
+          theme: t("themes:ochre")
+        })
+      },
+      {
+        key: Themes.Violet,
+        text: t("themes:theme", {
+          theme: t("themes:violet")
+        })
+      },
+      {
+        key: Themes.Magenta,
+        text: t("themes:theme", {
+          theme: t("themes:magenta")
+        })
+      },
+      {
+        key: Themes.Lavender,
+        text: t("themes:theme", {
+          theme: t("themes:lavender")
+        })
+      },
+      {
+        key: Themes.Pewter,
+        text: t("themes:theme", {
+          theme: t("themes:pewter")
+        })
+      },
+      {
+        key: Themes.Mint,
+        text: t("themes:theme", {
+          theme: t("themes:mint")
+        })
+      },
+      { key: THEME_CUSTOM_KEY, text: t("themes:custom") }
+    ],
     [t]
   );
 
@@ -64,16 +116,23 @@ function Header() {
     _: React.FormEvent<HTMLDivElement>,
     option?: IDropdownOption
   ) => {
-    const theme = +option!.key;
+    const currentTheme = option!.key;
 
-    if (!theme) {
+    if (typeof currentTheme !== "number" && !currentTheme) {
       return;
     }
 
-    LocalStorage.add(THEME_KEY, JSON.stringify(theme));
+    if (currentTheme === THEME_CUSTOM_KEY) {
+      dispatch(onThemeDesign(true));
+      return;
+    }
 
-    dispatch(changeTheme(theme));
+    LocalStorage.add(THEME_KEY, JSON.stringify(currentTheme));
+    dispatch(onThemeDesign(false));
+    dispatch(changeTheme(+currentTheme));
   };
+
+  console.log({ theme });
 
   return (
     <header className={cx("header")}>
@@ -91,7 +150,7 @@ function Header() {
 
       <div className={cx("action")}>
         <Dropdown
-          defaultSelectedKey={lang}
+          selectedKey={lang}
           onChange={handleChangeLanguage}
           options={languageOptions}
           placeholder={t("language:en")}

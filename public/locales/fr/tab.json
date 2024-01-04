@@ -5,5 +5,5 @@
   "card": "Style de carte",
   "card_desc": "Les onglets sont appelés cartes. Choisissez un onglet de style carte en fonction de la mise en page de votre page.",
   "vertical": "Tabs verticaux",
-  "vertical_desc": "Les onglets verticaux sont les onglets disposés à gauche dans un espace vertical, au lieu du dessus dans un espace horizontal."
+  "vertical_desc": "Les onglets verticaux sont les onglets disposés à gauche dans un espace vertical, au lieu de haut dans un espace horizontal."
 }

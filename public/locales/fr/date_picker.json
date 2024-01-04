@@ -1,0 +1,12 @@
+{
+  "title": "Sélecteur de date",
+  "desc": "Le sélecteur de date est utilisé pour sélectionner une date ou une gamme de dates.",
+  "basic_desc": "Un utilisateur peut choisir une date spécifique à l'aide d'un sélecteur de dattes en cliquant sur l'icône du calendrier ou simplement saisir par lui-même.",
+  "date_range": "Plage de dates (recommandée)",
+  "rec_desc": "Une plage de dates permet à l'utilisateur de choisir une date de début à partir d'un calendrier, puis de choisir une date de fin dans un autre calendrier.",
+  "rec": "(Recommandé)",
+  "required": "Datepicker avec champ requis",
+  "required_desc": "La validation se produira lorsque le sélecteur de date perd le foyer.",
+  "ranger_desc": "Une plage de dates permet à l'utilisateur de choisir une plage de dates à partir de deux calendriers. Il permet à l'utilisateur de sélectionner le même jour; Le temps de portée sera de 00:00 - 23:59.",
+  "error": "Ce champ est obligatoire."
+}

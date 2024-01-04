@@ -1,5 +1,12 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Themes } from "@gui/fluent-ui-allure";
+import {
+  getAllureTheme,
+  IExtendedPalette,
+  Language,
+  PartialTheme,
+  Theme,
+  Themes
+} from "@gui/fluent-ui-allure";
 
 import { AppState } from "./type";
 import { APP } from "./constants";
@@ -9,7 +16,9 @@ import { THEME_KEY } from "constants/language";
 let localTheme = LocalStorage.get(THEME_KEY);
 
 const initialState: AppState = {
-  theme: localTheme ? +localTheme : Themes.Cobalt
+  theme: localTheme ? +localTheme : Themes.Cobalt,
+  customTheme: undefined,
+  onThemeCustom: false
 };
 
 const slice = createSlice({
@@ -18,11 +27,22 @@ const slice = createSlice({
   reducers: {
     changeTheme(state: AppState, { payload }: PayloadAction<Themes>) {
       state.theme = payload;
+      state.customTheme = undefined;
+      state.onThemeCustom = false;
+    },
+    changeThemeCustom(
+      state: AppState,
+      { payload }: PayloadAction<PartialTheme>
+    ) {
+      state.customTheme = payload;
+    },
+    onThemeDesign(state: AppState, { payload }: PayloadAction<boolean>) {
+      state.onThemeCustom = payload;
     }
   }
 });
 
-export const { changeTheme } = slice.actions;
+export const { changeTheme, changeThemeCustom, onThemeDesign } = slice.actions;
 
 const appReducer = slice.reducer;
 export default appReducer;

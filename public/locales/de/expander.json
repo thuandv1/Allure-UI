@@ -1,0 +1,11 @@
+{
+  "title": "Expander",
+  "desc": "Ermöglichen Sie dem Benutzer, einen Abschnitt des Inhalts anzuzeigen, der die Verwendung des vertikalen Speicherplatzes optimieren kann.",
+  "basic_desc": "Der Expander hat normalerweise einen Titel und einen Pfeil darin. Klicken Sie auf die ganze Zeile der Pfeile, um zu erweitern/zu kollabieren.",
+  "about": "Um",
+  "about_desc": "Unter dem Azure -Himmel schlängelt sich ein ruhiger Fluss durch üppige grüne Wiesen. Eine Symphonie der Natur entfaltet sich mit lebendigen Blumen, die in der sanften Brise tanzen und eine malerische Szene von Gelassenheit und Schönheit erzeugen.",
+  "child": "Kindertitel",
+  "expand": "Ikone links erweitern",
+  "expand_desc": "Der Expander enthält normalerweise einen Titel, einen Pfeil und andere konfigurierbare Einstellungen. Klicken Sie auf den Pfeil, um zu erweitern/zu kollabieren.",
+  "more": "Mehr Polsterung"
+}

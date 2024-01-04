@@ -82,7 +82,6 @@ function createJsonFiles(output, fileName, jsonData) {
       if (error) {
         throw error;
       }
-      /* eslint-disable no-console */
       console.log(`Completed: ${jpFilePath}`);
     }
   );
@@ -93,7 +92,6 @@ function createJsonFiles(output, fileName, jsonData) {
       if (error) {
         throw error;
       }
-      /* eslint-disable no-console */
       console.log(`Completed: ${enFilePath}`);
     }
   );

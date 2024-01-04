@@ -1,0 +1,7 @@
+{
+  "title": "Produit commun",
+  "desc": "{{app}} dépend de @ GUI / Common-i18n-terms qui est un package comprenant une fonction commune qui peut être utilisée dans vos projets.",
+  "choose": "Choisissez un article",
+  "name": "Nom",
+  "icon": "Icône"
+}

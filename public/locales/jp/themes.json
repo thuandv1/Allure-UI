@@ -8,5 +8,7 @@
   "pewter": "ピューター",
   "mint": "ミント",
   "custom": "カスタムテーマの色",
-  "theme": "テーマ：{{theme}}"
+  "theme": "テーマ：{{theme}}",
+  "upload": "アップロード",
+  "download": "ダウンロード"
 }

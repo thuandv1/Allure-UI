@@ -1,0 +1,7 @@
+{
+  "title": "Gemeinsame Begriffe",
+  "desc": "{{app}} hängt von @GUI/Common-I18N-TERMS ab, ein Paket, das einige gemeinsame Begriffe mit Ihren Projekten verwendet werden kann.",
+  "choose": "Wählen Sie eine Elemente",
+  "key": "Schlüssel",
+  "value": "Wert"
+}

@@ -16,53 +16,17 @@ export const VerticalTabView: React.FunctionComponent = () => {
 
   return (
     <VerticalTab>
-      <PivotItem
-        headerText={t("title", {
-          index: 1
-        })}
-        headerButtonProps={{
-          "data-order": 1,
-          "data-title": "My Files Title"
-        }}
-      >
-        <Label styles={labelStyles}>
-          {t("title", {
-            index: "#1"
-          })}
-        </Label>
+      <PivotItem headerText={t("title", { index: 1 })} itemKey="k1">
+        <Label styles={labelStyles}>{t("title", { index: "#1" })}</Label>
       </PivotItem>
-      <PivotItem
-        headerText={t("title", {
-          index: 2
-        })}
-      >
-        <Label styles={labelStyles}>
-          {t("title", {
-            index: "#2"
-          })}
-        </Label>
+      <PivotItem headerText={t("title", { index: 2 })} itemKey="k2">
+        <Label styles={labelStyles}>{t("title", { index: "#2" })}</Label>
       </PivotItem>
-      <PivotItem
-        headerText={t("title", {
-          index: 3
-        })}
-      >
-        <Label styles={labelStyles}>
-          {t("title", {
-            index: "#3"
-          })}
-        </Label>
+      <PivotItem headerText={t("title", { index: 3 })} itemKey="k3">
+        <Label styles={labelStyles}>{t("title", { index: "#3" })}</Label>
       </PivotItem>
-      <PivotItem
-        headerText={t("title", {
-          index: 4
-        })}
-      >
-        <Label styles={labelStyles}>
-          {t("title", {
-            index: "#4"
-          })}
-        </Label>
+      <PivotItem headerText={t("title", { index: 4 })} itemKey="k4">
+        <Label styles={labelStyles}>{t("title", { index: "#4" })}</Label>
       </PivotItem>
     </VerticalTab>
   );

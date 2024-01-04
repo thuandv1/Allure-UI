@@ -1,0 +1,19 @@
+{
+  "title": "Datei -Uploader",
+  "desc": "Ermöglichen Sie den Benutzer, Dateien vom lokalen Ort hochzuladen.",
+  "browser": "Einzeldateibrowser",
+  "browser_desc": "Mit dieser Steuerung kann der Benutzer nur eine Datei durchsuchen.",
+  "file": "Zertifikatdatei",
+  "browse": "Durchsuche",
+  "uploader": "Einzeldatei -Uploader",
+  "uploader_desc": "Mit dieser Steuerung kann der Benutzer nur eine Datei hochladen.",
+  "uploader_more": "Durchsuchen Sie die CSV/Zip -Datei, in der die Datensätze, für die Sie die Felder wiederherstellen möchten, konfiguriert sind",
+  "download": "Laden Sie die CSV -Vorlage herunter",
+  "upload": "Hochladen",
+  "multiple": "Mehrfacher Datei -Uploader",
+  "multiple_desc": "Diese Steuerung sollte Drag & Drop für einfache Gebrauchsrate unterstützen. Lassen Sie den Benutzer besser wissen, welche Typen im Voraus hochgeladen werden können.tc",
+  "drag_drop": "Ziehen Sie Ihre Datei hier oder stöbern Sie",
+  "logo": "Laden Sie Logo hoch",
+  "up_to": "Bis zu 10 MB (.doc, .docx, .js, .cs, .css)",
+  "avatar": "Laden Sie Avatar hoch"
+}

@@ -1,0 +1,62 @@
+@import "/src/assets/scss/custom/variables";
+
+.wrapper {
+  position: fixed;
+  top: 6rem;
+  z-index: 9000;
+  right: 2rem;
+
+  .expanded {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    padding: 2.4rem 0;
+    border: 1px solid #e8e9ea;
+    background-color: $white;
+    transform: scale(0);
+    transition: 0.2s linear;
+    transform-origin: 90% 5rem;
+    width: 38rem;
+
+    .accordion {
+      padding: 0 2.4rem;
+      height: 80vh;
+      overflow-y: scroll;
+    }
+
+    &.active {
+      transform: scale(1);
+    }
+
+    h3 {
+      font-size: $fs-small;
+      padding-bottom: 2.8rem;
+      padding-left: 2.4rem;
+    }
+  }
+
+  .color {
+    position: absolute;
+    z-index: 9999;
+    top: 2rem;
+    right: 2rem;
+    border: 1px solid #e8e9ea;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+
+    background-color: $white;
+
+    &:hover {
+      user-select: none;
+      background-color: $border-color;
+      transition: 0.125s linear;
+    }
+  }
+}

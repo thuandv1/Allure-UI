@@ -8,5 +8,7 @@
   "pewter": "Étain",
   "mint": "menthe",
   "custom": "Couleur du thème personnalisé",
-  "theme": "Thème: {{theme}}"
+  "theme": "Thème: {{theme}}",
+  "upload": "Télécharger",
+  "download": "Télécharger"
 }

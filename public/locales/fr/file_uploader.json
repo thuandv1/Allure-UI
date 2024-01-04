@@ -1,0 +1,19 @@
+{
+  "title": "Téléchargeur de fichiers",
+  "desc": "Autoriser l'utilisateur à télécharger des fichiers de la place locale.",
+  "browser": "Navigateur de fichiers unique",
+  "browser_desc": "Ce contrôle permet à l'utilisateur de parcourir un seul fichier.",
+  "file": "Dossier de certificat",
+  "browse": "Parcourir",
+  "uploader": "Téléchargeur de fichiers unique",
+  "uploader_desc": "Ce contrôle permet à l'utilisateur de télécharger un seul fichier.",
+  "uploader_more": "Parcourez le fichier CSV / Zip où les enregistrements pour lesquels vous souhaitez restaurer les champs sont configurés",
+  "download": "Télécharger le modèle CSV",
+  "upload": "Télécharger",
+  "multiple": "Multiplit de téléchargeur de fichiers",
+  "multiple_desc": "Ce contrôle devrait prendre en charge la traînée et la chute pour faciliter l'utilisation. Mieux vaut laisser l'utilisateur à savoir quels types peuvent être téléchargés à l'avance.tc",
+  "drag_drop": "Faites glisser votre fichier ici ou parcourez",
+  "logo": "Télécharger le logo",
+  "up_to": "Jusqu'à 10 Mo (.doc, .docx, .js, .cs, .css)",
+  "avatar": "Télécharger Avatar"
+}

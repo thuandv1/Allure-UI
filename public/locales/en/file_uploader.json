@@ -1,0 +1,19 @@
+{
+  "title": "File Uploader",
+  "desc": "Allow user to upload files from local place.",
+  "browser": "Single file browser",
+  "browser_desc": "This control allow user to browse only one file.",
+  "file": "Certificate file",
+  "browse": "Browse",
+  "uploader": "Single file uploader",
+  "uploader_desc": "This control allow user to upload only one file.",
+  "uploader_more": "Browse the CSV/ZIP file where the records for which you want to restore the fields are configured",
+  "download": "Download CSV template",
+  "upload": "Upload",
+  "multiple": "Multiple file uploader",
+  "multiple_desc": "This control should support drag and drop for ease of use. Better let user to know which types can be uploaded in advance.tc",
+  "drag_drop": "Drag your file here, or browse",
+  "logo": "Upload Logo",
+  "up_to": "Up to 10 MB (.doc, .docx, .js, .cs, .css)",
+  "avatar": "Upload Avatar"
+}
