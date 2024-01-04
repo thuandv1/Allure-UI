@@ -7,6 +7,6 @@
   "rec": "(Recommandé)",
   "required": "Datepicker avec champ requis",
   "required_desc": "La validation se produira lorsque le sélecteur de date perd le foyer.",
-  "ranger_desc": "Une plage de dates permet à l'utilisateur de choisir une plage de dates à partir de deux calendriers. Il permet à l'utilisateur de sélectionner le même jour; Le temps de portée sera de 00:00 - 23:59.",
+  "ranger_desc": "Une plage de dates permet à l'utilisateur de choisir une plage de dates à partir de deux calendriers. Il permet à l'utilisateur de sélectionner le même jour; Le temps de plage sera de 00h00 à 23h59.",
   "error": "Ce champ est obligatoire."
 }
