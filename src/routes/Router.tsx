@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { publicRoutes } from "routes";
 import { Loading } from "@gui/fluent-ui-allure";
 import { useTranslation } from "react-i18next";
-import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Outlet, Route, Routes } from "react-router-dom";
 
 import DefaultLayout from "layouts/DefaultLayout";
 import { NotFoundImg } from "assets/images";
@@ -11,7 +11,7 @@ function Router() {
   const [t] = useTranslation("common");
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route
           path="/"
@@ -44,7 +44,7 @@ function Router() {
           />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

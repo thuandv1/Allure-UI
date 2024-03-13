@@ -47,7 +47,7 @@ function IconGalleryContent() {
 
   return (
     <Content title={t("title")} desc={t("desc")}>
-      <TypoUsage text={t("use")} />
+      {/* <TypoUsage text={t("use")} /> */}
       <SearchBox
         onChange={(e) => handleSearch(e?.currentTarget?.value)}
         style={{ display: "flex", flexDirection: "row-reverse" }}

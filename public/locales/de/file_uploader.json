@@ -4,7 +4,7 @@
   "browser": "Einzeldateibrowser",
   "browser_desc": "Mit dieser Steuerung kann der Benutzer nur eine Datei durchsuchen.",
   "file": "Zertifikatdatei",
-  "browse": "Durchsuche",
+  "demo": "Demo -Text",
   "uploader": "Einzeldatei -Uploader",
   "uploader_desc": "Mit dieser Steuerung kann der Benutzer nur eine Datei hochladen.",
   "uploader_more": "Durchsuchen Sie die CSV/Zip -Datei, in der die Datensätze, für die Sie die Felder wiederherstellen möchten, konfiguriert sind",

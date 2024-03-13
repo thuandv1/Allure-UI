@@ -4,7 +4,7 @@
   "browser": "Single file browser",
   "browser_desc": "This control allow user to browse only one file.",
   "file": "Certificate file",
-  "browse": "Browse",
+  "demo": "Demo text",
   "uploader": "Single file uploader",
   "uploader_desc": "This control allow user to upload only one file.",
   "uploader_more": "Browse the CSV/ZIP file where the records for which you want to restore the fields are configured",

@@ -4,7 +4,7 @@
   "browser": "Navigateur de fichiers unique",
   "browser_desc": "Ce contrôle permet à l'utilisateur de parcourir un seul fichier.",
   "file": "Dossier de certificat",
-  "browse": "Parcourir",
+  "demo": "Texte de démonstration",
   "uploader": "Téléchargeur de fichiers unique",
   "uploader_desc": "Ce contrôle permet à l'utilisateur de télécharger un seul fichier.",
   "uploader_more": "Parcourez le fichier CSV / Zip où les enregistrements pour lesquels vous souhaitez restaurer les champs sont configurés",

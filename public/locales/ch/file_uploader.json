@@ -4,7 +4,7 @@
   "browser": "单文件浏览器",
   "browser_desc": "此控件允许用户仅浏览一个文件。",
   "file": "证书文件",
-  "browse": "浏览",
+  "demo": "演示文字",
   "uploader": "单文件上传器",
   "uploader_desc": "此控件允许用户仅上传一个文件。",
   "uploader_more": "浏览您要还原字段的记录的CSV/ZIP文件",

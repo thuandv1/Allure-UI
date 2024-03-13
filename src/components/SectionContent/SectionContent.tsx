@@ -20,8 +20,8 @@ interface ISectionContentProps {
 
 function SectionContent(props: ISectionContentProps) {
   const {
-    desc,
-    title,
+    desc = "", //this is default value props
+    title = "",
     uses,
     descUses,
     children,
